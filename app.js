@@ -13,13 +13,8 @@ app.set('port', 4000);
 
 //Set Server up
 // Start App requests
-app.use('/app',express.static(__dirname + "/web"));
-app.use(harp.mount(__dirname + "/web"));
-
-// Start Index Root Requests
-app.use('/',express.static(__dirname + "/public"));
-app.use(harp.mount(__dirname + "/public"));
-
+app.use('/',express.static(__dirname + "/build/web"));
+app.use(harp.mount(__dirname + "/build/web"));
 
 // Launch
 http.createServer(app).listen(app.get('port'), function(){

@@ -9,7 +9,7 @@ var http = require('http');
 var app = express();
 
 // Set Main App Variables
-app.set('port', 4000 || process.env.PORT);
+app.set('port', process.env.PORT4000 || 4000);
 
 //Set Server up
 // Start App requests

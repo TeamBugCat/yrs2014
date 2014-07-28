@@ -1,4 +1,6 @@
-name: fdfdfdf
-description: A sample web application
+name: yrs2014
+description: A sample application
 dependencies:
-  browser: any
+  core_elements: any
+  paper_elements: any
+  polymer: any

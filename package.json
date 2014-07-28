@@ -9,7 +9,8 @@
   "dependencies": {
     "harp": "*",
     "twilio":"*",
-    "feedparser":"*"
+    "feedparser":"*",
+    "express":"*"
   },
   "engine": "node >= 0.4.1"
 }

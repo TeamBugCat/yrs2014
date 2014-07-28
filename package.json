@@ -1,0 +1,15 @@
+{
+  "name": "yrs2014",
+  "description": "An app.",
+  "author": "Isaac Reid-Guest <isaac.reid.guest@gmail.com>, Matt Randell <ranmat11@gmail.com>",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/TeamBugCat/yrs2014.git"
+  },
+  "dependencies": {
+    "harp": "*",
+    "twilio":"*",
+    "feedparser":"*"
+  },
+  "engine": "node >= 0.4.1"
+}

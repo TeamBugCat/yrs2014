@@ -44,6 +44,8 @@ app.use('/api/sources', function (req, res, next) {
   res.send(require('./rssFeeds'));
 });
 
+
+app.use('/feeds/',express.static(__dirname + "/feeds"));
 app.use(express.static(__dirname + "/build/web"));
 app.use(harp.mount(__dirname + "/build/web"));
 

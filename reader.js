@@ -29,7 +29,7 @@ function getNews(){
 		if (error){
 			console.error("Error: " + error);
 		}else{
-			console.log(data);
+			console.log(data.toString("utf8"));
 		}
 	});
 }

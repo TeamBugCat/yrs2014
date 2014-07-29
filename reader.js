@@ -10,7 +10,7 @@ var data;
  function updateCache(){
 	rsj.r2j(rssFeed.bbcNews.index,function(json) {
 		console.log(json);
-		fs.writeFile("./bbc-rss.json", json, function(err) {
+		fs.writeFile("./bbc-rss.json~", json, function(err) {
 				if(err) {
 						console.log(err);
 				} else {
@@ -22,10 +22,10 @@ var data;
 exports.updateCache = updateCache;
 
 function getNews(){
-	if (!fs.existsSync('./bbc-rss.json')) {
+	if (!fs.existsSync('./bbc-rss.json~')) {
 			updateCache();
 	}
-	fs.readFile('./bbc-rss.json', function (error, data) {
+	fs.readFile('./bbc-rss.json~', function (error, data) {
 		if (error){
 			console.error("Error: " + error);
 		}else{

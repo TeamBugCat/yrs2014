@@ -5,7 +5,9 @@ var express = require('express');
 var harp = require('harp');
 var feedparser = require('feedparser');
 var http = require('http');
-var client = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
+if(process.env.TWILIO_SID&&process.env.TWILIO_AUTH){
+  var client = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
+}
 
 var app = express();
 

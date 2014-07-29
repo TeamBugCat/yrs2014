@@ -1,6 +1,6 @@
 console.log("Starting App");
 
-// Require libraries 
+// Require libraries
 var express = require('express');
 var harp = require('harp');
 var feedparser = require('feedparser');
@@ -21,23 +21,27 @@ app.set('port', process.env.PORT || 4000);
 
 if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
   console.log("Attempting to contact Twilio");
-	var twilio = require('twilio');
-  var client = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
+  var twilio = require('twilio');
+  var client = twilio(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
 }
 
 
 
 app.use('/api/phonecall',function(req,res,next){
 	//Create TwiML response
-		var twiml = new twilio.TwimlResponse();
-		twiml.say('Welcome to the disbility assistance service.')
+	var twiml = new twilio.TwimlResponse();
+	twiml.say('Welcome to the disbility assistance service.')
     .pause({ length:1 })
     .say('The news support is presently being improved.', {
         voice:'man',
         language:'en-gb'
     });
-		res.writeHead(200, {'Content-Type': 'text/xml'});
-		res.end(twiml.toString());
+	res.set('Content-Type', 'text/xml');
+	res.send(twiml.toString());
+});
+
+app.use('/api/sources', function (req, res, next) {
+  res.send(require('./rssFeeds'));
 });
 
 app.use(express.static(__dirname + "/build/web"));

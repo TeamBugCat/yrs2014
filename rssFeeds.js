@@ -1,5 +1,6 @@
 module.exports={
 	bbcNews:{
-		index:"http://feeds.bbci.co.uk/news/rss.xml"
+		index:"http://feeds.bbci.co.uk/news/rss.xml",
+		namePretty: "BBC News"
 	}
 }

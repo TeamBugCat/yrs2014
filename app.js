@@ -18,9 +18,10 @@ app.set('port', process.env.PORT || 4000);
 if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
   console.log("Attempting to contact Twilio");
   var client = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
-  
-  app.use('/api/phonecall',function(req,res,next){
-		//Create TwiML response
+}
+
+app.use('/api/phonecall',function(req,res,next){
+//Create TwiML response
 		var twiml = new twilio.TwimlResponse();
 		twiml.say('Hello World!')
     .pause({ length:3 })
@@ -32,10 +33,8 @@ if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
 		res.end(twiml.toString());
 }
 
-app.use('/',express.static(__dirname + "/build/web"));
+app.use(express.static(__dirname + "/build/web"));
 app.use(harp.mount(__dirname + "/build/web"));
-
-/* Insert api defs here */
 
 // Launch
 http.createServer(app).listen(app.get('port'), function(){

@@ -11,9 +11,9 @@
     "twilio":"*",
     "feedparser":"*",
     "express":"*",
-		"request":"*",
-		"rsj":"*",
-		"html-to-text":"*"
+    "request":"*",
+    "parse-rss":"*",
+    "html-to-text":"*"
   },
   "engine": "node >= 0.4.1"
 }

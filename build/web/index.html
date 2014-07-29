@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>Fdfdfdf</title>
+    <title>News Access</title>
     <link rel="stylesheet" href="base.css">
     
     <!-- Polymer.dart support -->
@@ -17,19 +17,15 @@
   </head>
   <body>
     <core-toolbar class="menubar">
-      <span flex>Title</span>
+      <span flex><span style="font-size: 1.5em;">Title</span></span>
       <core-icon-button icon="menu"></core-icon-button>
     </core-toolbar>
    
-    <div class="content">
-      <section class="wrapper">
-        <article class="main cell">
-          <core-icon-button icon="menu"></core-icon-button>
-          <core-input label="type something"></paper-input>
-        </article>
-        <aside class="secondary cell">Discover stuffs</aside>
+    <section class="content">
+      <section class="wrapper" id="news_select">
+        <h2 class="title">News Sources</h2>
       </section>
-    </div>
+    </section>
 
     <script type="application/dart" src="app.dart"></script>
     <script src="packages/browser/dart.js"></script>

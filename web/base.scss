@@ -15,7 +15,7 @@ $desktop: new-breakpoint(min-width 480px);
 
 body {
   background-color: #F8F8F8;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.2em;
@@ -24,10 +24,11 @@ body {
 
 .menubar {
   background-color: cyan;
+  margin-bottom: 0px;
 }
 
-div.content {
-  margin: 30px;
+.content {
+  margin: 1.5%;
 }
 
 .cell {
@@ -36,6 +37,7 @@ div.content {
 }
 
 .wrapper { 
+  margin-top: 0px;
   
   @include outer-container;
   .main { 
@@ -47,5 +49,9 @@ div.content {
       @include span-columns(8);
     } 
    }
-  .secondary { @include span-columns(4); }
+  
+  .title {
+    @include span-columns(12);
+    text-align: center;
+  }
 }

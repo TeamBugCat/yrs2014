@@ -1,5 +1,12 @@
+library yrs2014;
+
 //import "package:polymer/polymer.dart";
 import "dart:html";
+import "dart:async";
+import "dart:math";
+import "dart:convert";
+
+part "api_interface.dart";
 
 const List<int> KCODE = const [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 List<int> currentKcodeList = [];
@@ -12,7 +19,7 @@ void main() {
   window.onKeyDown.listen((KeyboardEvent e) {
     print("Key ${e.keyCode} (charcode) pressed.");
     
-    if (KCODE[currentKcodeList.length] == e.keyCode) {
+    if (KCODE[currentKcodeList.length] == e.keyCode) {  
       currentKcodeList.add(e.keyCode);
     }
     
@@ -25,9 +32,13 @@ void main() {
 
 void doKonami() {
   print("Konami code");
-  document.body.innerHtml = '''
-    <img src="http://fc09.deviantart.net/fs70/f/2013/152/c/0/c032cff5018b599625e96c5eaa424c66-d5xk0s3.png">
-  ''';
+  new Timer.periodic(new Duration(seconds: 1), (_) {
+    HtmlElement menu = querySelector(".menubar");
+    
+    final Random r = new Random();
+    
+    menu.style.backgroundColor = "rgb(${r.nextInt(255)}, ${r.nextInt(255)}, ${r.nextInt(255)})";
+  });
 }
 
 bool listsEqual(List a, List b) {

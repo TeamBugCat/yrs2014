@@ -1691,6 +1691,21 @@ var $$ = {};
   },
   TimerImpl: {
     "^": "Object;_once,_inEventLoop,_handle",
+    cancel$0: function() {
+      if ($.get$globalThis().setTimeout != null) {
+        if (this._inEventLoop)
+          throw H.wrapException(P.UnsupportedError$("Timer in event loop cannot be canceled."));
+        if (this._handle == null)
+          return;
+        H.leaveJsAsync();
+        if (this._once)
+          $.get$globalThis().clearTimeout(this._handle);
+        else
+          $.get$globalThis().clearInterval(this._handle);
+        this._handle = null;
+      } else
+        throw H.wrapException(P.UnsupportedError$("Canceling a timer."));
+    },
     TimerImpl$periodic$2: function(milliseconds, callback) {
       var t1 = $.get$globalThis();
       if (t1.setTimeout != null) {
@@ -6386,7 +6401,13 @@ var $$ = {};
   }, "call$0", "main$closure", 0, 0, 1],
   doKonami: function() {
     P.print("Konami code");
-    P.Timer_Timer$periodic(P.Duration$(0, 0, 0, 0, 0, 1), new E.doKonami_closure());
+    var t1 = $.t;
+    if (t1 != null) {
+      t1.cancel$0();
+      $.t = null;
+      return;
+    }
+    $.t = P.Timer_Timer$periodic(P.Duration$(0, 0, 0, 0, 0, 1), new E.doKonami_closure());
   },
   listsEqual: function(a, b) {
     var t1, i, t2;
@@ -6793,6 +6814,7 @@ $.Zone__current = C.C__RootZone;
 $.Expando__keyCount = 0;
 $.Device__isOpera = null;
 $.Device__isWebKit = null;
+$.t = null;
 Isolate.$lazy($, "globalThis", "globalThis", "get$globalThis", function() {
   return function() {
     return this;

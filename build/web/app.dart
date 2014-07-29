@@ -8,6 +8,8 @@ import "dart:convert";
 
 part "api_interface.dart";
 
+Timer t;
+
 const List<int> KCODE = const [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 List<int> currentKcodeList = [];
 
@@ -32,7 +34,13 @@ void main() {
 
 void doKonami() {
   print("Konami code");
-  new Timer.periodic(new Duration(seconds: 1), (_) {
+  if (t != null) {
+    t.cancel();
+    t = null;
+    return;
+  }
+  
+  t = new Timer.periodic(new Duration(seconds: 1), (_) {
     HtmlElement menu = querySelector(".menubar");
     
     final Random r = new Random();

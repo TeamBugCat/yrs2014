@@ -30,7 +30,6 @@ if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
     });
 		res.writeHead(200, {'Content-Type': 'text/xml'});
 		res.end(twiml.toString());
-  }
 }
 
 app.use('/',express.static(__dirname + "/build/web"));

@@ -10,7 +10,10 @@
     "harp": "*",
     "twilio":"*",
     "feedparser":"*",
-    "express":"*"
+    "express":"*",
+		"request":"*",
+		"rsj":"*",
+		"html-to-text":"*"
   },
   "engine": "node >= 0.4.1"
 }

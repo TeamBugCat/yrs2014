@@ -1,13 +1,17 @@
-console.log("Test");
+console.log("Starting App");
 
 // Require libraries 
 var express = require('express');
 var harp = require('harp');
 var feedparser = require('feedparser');
 var http = require('http');
+var request = require('request');
 
 // Initalise Express
 var app = express();
+
+// Add dedicated reader library.
+var reader = require("./reader");
 
 // Set Main App Variables
 app.set('port', process.env.PORT || 4000);
@@ -21,12 +25,14 @@ if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
   var client = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
 }
 
+
+
 app.use('/api/phonecall',function(req,res,next){
 	//Create TwiML response
 		var twiml = new twilio.TwimlResponse();
-		twiml.say('Hello World!')
-    .pause({ length:3 })
-    .say('Good, Day, the news will be coming soon.', {
+		twiml.say('Welcome to the disbility assistance service.')
+    .pause({ length:1 })
+    .say('The news support is presently being improved.', {
         voice:'man',
         language:'en-gb'
     });

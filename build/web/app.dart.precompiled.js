@@ -2978,19 +2978,20 @@ var $$ = {};
   "^": "",
   main: [function() {
     var t1 = document.querySelector("#sample_text_id");
+    $.target = t1;
     t1.textContent = "Click me!";
     t1 = J.get$onClick$x(t1);
     H.setRuntimeTypeInfo(new W._EventStreamSubscription(0, t1._target, t1._eventType, W._wrapZone(S.reverseText$closure()), t1._useCapture), [H.getTypeArgumentByIndex(t1, 0)])._tryResume$0();
   }, "call$0", "main$closure", 0, 0, 0],
   reverseText: [function($event) {
     var text, buffer, i, t1;
-    text = document.querySelector("#sample_text_id").textContent;
+    text = $.target.textContent;
     buffer = P.StringBuffer$("");
     for (i = text.length - 1; i >= 0; --i) {
       t1 = text[i];
       buffer._contents += t1;
     }
-    document.querySelector("#sample_text_id").textContent = buffer._contents;
+    $.target.textContent = buffer._contents;
   }, "call$1", "reverseText$closure", 2, 0, 1]
 },
 1],
@@ -6554,6 +6555,7 @@ $.prototypeForTagFunction = null;
 $.dispatchRecordsForInstanceTags = null;
 $.interceptorsForUncacheableTags = null;
 $.initNativeDispatchFlag = null;
+$.target = null;
 $.printToZone = null;
 $._nextCallback = null;
 $._lastCallback = null;

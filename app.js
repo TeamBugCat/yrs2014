@@ -17,11 +17,12 @@ app.set('port', process.env.PORT || 4000);
 
 if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
   console.log("Attempting to contact Twilio");
+	var twilio = require('twilio');
   var client = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
 }
 
 app.use('/api/phonecall',function(req,res,next){
-//Create TwiML response
+	//Create TwiML response
 		var twiml = new twilio.TwimlResponse();
 		twiml.say('Hello World!')
     .pause({ length:3 })
@@ -31,7 +32,7 @@ app.use('/api/phonecall',function(req,res,next){
     });
 		res.writeHead(200, {'Content-Type': 'text/xml'});
 		res.end(twiml.toString());
-}
+});
 
 app.use(express.static(__dirname + "/build/web"));
 app.use(harp.mount(__dirname + "/build/web"));

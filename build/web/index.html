@@ -5,19 +5,24 @@
     <meta charset="utf-8">
     <title>Fdfdfdf</title>
     <link rel="stylesheet" href="base.css">
+    
+    <!-- Polymer.dart support -->
+    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+    
+    <link rel="import" href="packages/core_elements/core_input.html">
+    <link rel="import" href="packages/core_elements/core_icon_button.html">
   </head>
   <body>
     <h1>Fdfdfdf</h1>
     
-    <p>Hello world from Dart!</p>
-    
-    <div id="sample_container_id">
-      <p id="sample_text_id"></p>
-    </div>
-    
-    <div id="stuff">
-      <div id="stuff2">YEYEYEYEYEYEYEYEY I'm red</div>
-    </div>
+    <section class="wrapper">
+      <article class="main cell">
+        <core-icon-button icon="menu"></core-icon-button>
+        <core-input label="type something"></paper-input>
+      </article>
+      <aside class="secondary cell">Discover stuffs</aside>
+    </section>
 
     <script type="application/dart" src="app.dart"></script>
     <script src="packages/browser/dart.js"></script>

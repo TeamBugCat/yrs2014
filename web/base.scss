@@ -1,3 +1,17 @@
+$debug: false;
+
+@if $debug {
+  $visual-grid: true;
+  $visual-grid-color: red;
+  $visual-grid-index: front;
+  $visual-grid-opacity: 0.1;
+}
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$mobile: new-breakpoint(max-width 480px);
+$desktop: new-breakpoint(min-width 480px);
 
 body {
   background-color: #F8F8F8;
@@ -8,26 +22,22 @@ body {
   margin: 15px;
 }
 
-h1, p {
-  color: #333;
+.cell {
+  background-color: cyan;
+  border: 1px solid green;
 }
 
-#sample_container_id {
-  width: 100%;
-  height: 400px;
-  position: relative;
-  border: 1px solid #ccc;
-  background-color: #fff;
-}
-
-#sample_text_id {
-  font-size: 24pt;
-  text-align: center;
-  margin-top: 140px;
-}
-
-#stuff {
-  #stuff2 {
-    color: red;
-  }
+.wrapper { 
+  
+  @include outer-container;
+  .main { 
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+    
+    @include media($desktop) {
+      @include span-columns(8);
+    } 
+   }
+  .secondary { @include span-columns(4); }
 }

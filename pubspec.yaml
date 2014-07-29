@@ -1,4 +1,6 @@
 name: yrs2014
+version: 0.0.1
+author: ranmat
 description: A sample application
 dependencies:
   core_elements: any

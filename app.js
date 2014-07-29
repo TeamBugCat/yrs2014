@@ -25,8 +25,6 @@ if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
   var client = twilio(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
 }
 
-
-
 app.use('/api/phonecall',function(req,res,next){
 	//Create TwiML response
 	var twiml = new twilio.TwimlResponse();
@@ -43,7 +41,6 @@ app.use('/api/phonecall',function(req,res,next){
 app.use('/api/sources', function (req, res, next) {
   res.send(require('./rssFeeds'));
 });
-
 
 app.use('/feeds/',express.static(__dirname + "/feeds"));
 app.use(express.static(__dirname + "/build/web"));

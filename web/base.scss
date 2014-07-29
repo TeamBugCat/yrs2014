@@ -19,7 +19,15 @@ body {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.2em;
-  margin: 15px;
+  margin: 0px;
+}
+
+.menubar {
+  background-color: cyan;
+}
+
+div.content {
+  margin: 30px;
 }
 
 .cell {

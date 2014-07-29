@@ -12,17 +12,25 @@
     
     <link rel="import" href="packages/core_elements/core_input.html">
     <link rel="import" href="packages/core_elements/core_icon_button.html">
+    <link rel="import" href="packages/core_elements/core_toolbar.html">
   </head>
   <body>
+    <core-toolbar class="menubar">
+      <span flex>Title</span>
+      <core-icon-button icon="menu"></core-icon-button>
+    </core-toolbar>
+  
     <h1>Fdfdfdf</h1>
     
-    <section class="wrapper">
-      <article class="main cell">
-        <core-icon-button icon="menu"></core-icon-button>
-        <core-input label="type something"></paper-input>
-      </article>
-      <aside class="secondary cell">Discover stuffs</aside>
-    </section>
+    <div class="content">
+      <section class="wrapper">
+        <article class="main cell">
+          <core-icon-button icon="menu"></core-icon-button>
+          <core-input label="type something"></paper-input>
+        </article>
+        <aside class="secondary cell">Discover stuffs</aside>
+      </section>
+    </div>
 
     <script type="application/dart" src="app.dart"></script>
     <script src="packages/browser/dart.js"></script>

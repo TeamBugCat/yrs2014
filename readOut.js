@@ -13,7 +13,7 @@ function updateCache(){
     if(err){
       console.log("Error: " + err)
     }else{
-      fs.writeFile("./feeds/"+feed.id+".json", JSON.stringify(rss), function(err) {
+      fs.writeFile("./feeds/"+feed.id+".json~", JSON.stringify(rss), function(err) {
           if(err) {
               console.log(err);
           } else {
@@ -24,3 +24,21 @@ function updateCache(){
   )  
  }
 }}
+exports.updateCache = updateCache;
+
+function readRss(id){
+  fs.readfile("./feeds/"+id+".json~",function(err,data){
+    if (err) {
+      console.log("Error: "+err);
+      return false;
+    }else{
+      return data;
+    }
+  })
+}
+
+function (id){
+  var rss = JSON.parse(fs.readFileSync("./feeds/"+id+".json~",'utf8'));
+  var template = fs.readFileSync('templates/callScript.txt','utf8');
+  return Mustache.render(template,rss);
+}

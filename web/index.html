@@ -5,22 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>News Access</title>
-    <link rel="stylesheet" href="base.css">
-    
+
     <!-- Polymer.dart support -->
-    <script src="packages/web_components/platform.js"></script>
+    <script src="packages/web_components/platform.concat.js"></script>
     <script src="packages/web_components/dart_support.js"></script>
-    
-    <link rel="import" href="packages/core_elements/core_input.html">
+
+    <link rel="stylesheet" href="base.css">
+
     <link rel="import" href="packages/core_elements/core_icon_button.html">
+    <link rel="import" href="packages/core_elements/core_menu_button.html">
     <link rel="import" href="packages/core_elements/core_toolbar.html">
+    <link rel="import" href="packages/paper_elements/paper_item.html">
+
   </head>
-  <body>
+  <body unresolved>
     <core-toolbar class="menubar">
       <span flex><span style="font-size: 1.5em;">Title</span></span>
-      <core-icon-button icon="menu"></core-icon-button>
+      <core-menu-button icon="menu" id="menu" halign="right">
+        <div class="rounded-shadow">
+          <paper-item label="A________"></paper-item>
+        </div>
+      </core-menu-button>
     </core-toolbar>
-   
+
     <section class="content">
       <section class="wrapper" id="news_select">
         <h2 class="title">News Sources</h2>

@@ -1,20 +1,28 @@
 {
   "name": "yrs2014",
   "description": "An app. ",
+  "version": "0.0.1",
   "author": "Isaac Reid-Guest <isaac.reid.guest@gmail.com>, Matt Randell <ranmat11@gmail.com>",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/TeamBugCat/yrs2014.git"
+    "type": "git",
+    "url": "https://github.com/TeamBugCat/yrs2014.git"
   },
   "dependencies": {
     "harp": "*",
-    "twilio":"*",
-    "feedparser":"*",
-    "express":"*",
-    "request":"*",
-    "parse-rss":"*",
-    "html-to-text":"*",
-    "mustache":"*"
+    "twilio": "*",
+    "feedparser": "*",
+    "express": "*",
+    "request": "*",
+    "parse-rss": "*",
+    "html-to-text": "*",
+    "mustache": "*"
   },
-  "engine": "node >= 0.4.1"
+  "engine": "node >= 0.4.1",
+  "subdomain": "bugcat2014",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
 }

@@ -30,7 +30,7 @@ app.use('/api/phonecall',function(req,res,next){
 	var twiml = new twilio.TwimlResponse();
 	twiml.say('Welcome to the disbility assistance service.')
     .pause({ length:1 })
-    .say('Extension requested'+req.param('Digits'))
+    .say('Extension requested '+req.param('Digits'))
     .say('The news support is presently being improved.', {
         voice:'man',
         language:'en-gb'
@@ -43,6 +43,7 @@ app.use('/api/sources', function (req, res, next) {
   res.send(require('./rssFeeds'));
 });
 
+app.use('/pages/',express.static(__dirname + "/pages"));
 app.use('/feeds/',express.static(__dirname + "/feeds"));
 app.use(express.static(__dirname + "/build/web"));
 app.use(harp.mount(__dirname + "/build/web"));

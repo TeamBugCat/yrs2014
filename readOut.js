@@ -4,6 +4,7 @@ var fs = require("fs");
 var http = require('http');
 var request = require('request');
 var parser = require('parse-rss');
+var mustache = require('mustache');
 
 var rssFeeds = require("./rssFeeds");
 
@@ -49,6 +50,6 @@ exports.readRss = readRss;
 function genScript(id){
   var rss = JSON.parse(fs.readFileSync("./feeds/"+id+".json~",'utf8'));
   var template = fs.readFileSync('templates/callScript.txt','utf8');
-  return Mustache.render(template,rss);
+  return mustache.render(template,rss);
 }
 exports.genScript = genScript;

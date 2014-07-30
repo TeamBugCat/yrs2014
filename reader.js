@@ -11,6 +11,12 @@ function cacheFileName(id) {
   return "./feeds/"+id+".json~";
 }
 
+function onerr(err) {
+  if (err) {
+    console.log("Error: "+err);
+  }
+}
+
 function updateCache(id) {
   parser(rssFeed[id].index, function(err,rss){
     if(err){
@@ -42,7 +48,7 @@ exports.updateCache = updateCache;
 
 function fetchNews(){
   for (var id in rssFeed) {
-	  if (!fs.existsSync(cacheFileName(id)) {
+	  if (!fs.existsSync(cacheFileName(id))) {
 			  updateCache(id);
 	  }
 	  fs.readFile(cacheFileName(id), function (error, data) {
@@ -55,9 +61,16 @@ function fetchNews(){
 	  });
 	}
 }
-exports.getNews = getNews;
+exports.fetchNews = fetchNews;
 
-function getNews(id){
-  if (!fs.exists
+function getNews(id, callback){
+  if (!fs.existsSync(cacheFileName(id))) {
+    fetchNews();
+  }
+  fs.readFile(cacheFileName(id), function (error, data) {
+    onerr();
+    
+    return JSON.parse(data.toString("utf8"));
+  });
 }
-exports.showNews = showNews;
+exports.getNews = getNews;

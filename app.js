@@ -39,9 +39,9 @@ app.use('/api/phonecall',function(req,res,next){
 	res.send(twiml.toString());
 });
 
-app.use('/api/news/:source',function(req,res,next){
+app.use('/api/news/bbcNews',function(req,res,next){
   reader.updateCache();
-  res.end(reader.genScript(req.param('source')));
+  res.end(reader.genScript("bbcNews"));
 });
 
 app.use('/api/sources', function (req, res, next) {

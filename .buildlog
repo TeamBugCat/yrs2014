@@ -458,3 +458,23 @@ build.dart --machine --changed=web/elements.html
 
 build.dart finished [2697 ms]
 
+---
+build.dart --machine --changed=app.js --changed=node_modules/mustache/CHANGES --changed=node_modules/mustache/L...
+
+build.dart finished [4270 ms]
+
+---
+build.dart --machine --changed=package.json
+
+build.dart finished [2888 ms]
+
+---
+build.dart --machine --changed=node_modules/heroku/Cakefile --changed=node_modules/heroku/README.md --changed=n...
+
+build.dart finished [2581 ms]
+
+---
+build.dart --machine --changed=app.js
+
+build.dart finished [2572 ms]
+

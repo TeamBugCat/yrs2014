@@ -3,6 +3,8 @@ var feedparser = require('feedparser');
 var http = require('http');
 var request = require('request');
 var parser = require('parse-rss');
+var twilio = require('twilio');
+
 
 var rssFeed = require("./rssFeeds");
 var data;
@@ -48,7 +50,7 @@ exports.updateCache = updateCache;
 
 function fetchNews(){
   for (var id in rssFeed) {
-	  if (!fs.existsSync(cacheFileName(id))) {
+	  if (!fs.existsSync(cacheFileName(id.id))) {
 			  updateCache(id);
 	  }
 	  fs.readFile(cacheFileName(id), function (error, data) {
@@ -74,3 +76,22 @@ function getNews(id, callback){
   });
 }
 exports.getNews = getNews;
+
+function makeNews(id){
+  fs.readFile(cacheFileName(id), function (error, data) {
+  if (error){
+    console.error("Error: " + error);
+  }else{
+      //console.log(data.toString("utf8"));
+      var news = JSON.parse(data.toString("utf8"));
+      var resp = new twilio.TwimlResponse();
+
+      resp.say('News reading starting!');
+      
+      for(var item in news){
+      	item.name
+      }
+    }
+  });
+}
+exports.makeNews = makeNews;

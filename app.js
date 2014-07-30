@@ -40,7 +40,6 @@ app.all('/api/phonecall',function(req,res,next){
 });
 
 app.all('/api/news/:source',function (req,res,next){
-  reader.updateCache();
   res.set('Content-Type', 'text/xml');
   res.send(reader.genScript(req.param("source")));
 });

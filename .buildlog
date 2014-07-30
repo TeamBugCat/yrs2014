@@ -538,3 +538,13 @@ build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/
 
 build.dart finished [2701 ms]
 
+---
+build.dart --machine --changed=app.js
+
+build.dart finished [2563 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2508 ms]
+

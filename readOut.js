@@ -48,6 +48,9 @@ function readRss(id, callback){
 exports.readRss = readRss;
 
 function genScript(id){
+  if (!fs.fileExistsSync("./feeds/"+id+".json~")) {
+    updateCache();
+  }
   var rss = JSON.parse(fs.readFileSync("./feeds/"+id+".json~",'utf8'));
   var template = fs.readFileSync('templates/callScript.txt','utf8');
   return mustache.render(template,{rss:rss});

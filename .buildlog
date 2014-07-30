@@ -548,3 +548,13 @@ build.dart --machine --changed=readOut.js
 
 build.dart finished [2508 ms]
 
+---
+build.dart --machine --changed=web/twiliofail.xml --removed=build/web/api_interface.dart --removed=build/web/ap...
+
+build.dart finished [3594 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2416 ms]
+

@@ -13,7 +13,8 @@
     "express":"*",
     "request":"*",
     "parse-rss":"*",
-    "html-to-text":"*"
+    "html-to-text":"*",
+    "mustache":"*"
   },
   "engine": "node >= 0.4.1"
 }

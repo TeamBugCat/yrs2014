@@ -11,7 +11,7 @@ var request = require('request');
 var app = express();
 
 // Add dedicated reader library.
-var reader = require("./reader");
+var reader = require("./readOut.js");
 
 // Set Main App Variables
 app.set('port', process.env.PORT || 4000);
@@ -37,6 +37,11 @@ app.use('/api/phonecall',function(req,res,next){
     });
 	res.set('Content-Type', 'text/xml');
 	res.send(twiml.toString());
+});
+
+app.use('/api/news/:source',function(req,res,next){
+  reader.updateCache();
+  res.end(reader.genScript(req.param('source')));
 });
 
 app.use('/api/sources', function (req, res, next) {

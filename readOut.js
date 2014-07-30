@@ -50,6 +50,6 @@ exports.readRss = readRss;
 function genScript(id){
   var rss = JSON.parse(fs.readFileSync("./feeds/"+id+".json~",'utf8'));
   var template = fs.readFileSync('templates/callScript.txt','utf8');
-  return mustache.render(template,rss);
+  return mustache.render(template,{rss:rss});
 }
 exports.genScript = genScript;

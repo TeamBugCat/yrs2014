@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+{{#rss}}
+    <Say voice="man" finishOnKey="*" language="en-GB">{{title}} - {{description}}</Say>
+{{/rss}}
+</Response>

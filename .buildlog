@@ -478,3 +478,33 @@ build.dart --machine --changed=app.js
 
 build.dart finished [2572 ms]
 
+---
+build.dart --machine --changed=app.js
+
+build.dart finished [2493 ms]
+
+---
+build.dart --machine --changed=app.js
+
+build.dart finished [2437 ms]
+
+---
+build.dart --machine --changed=app.js
+
+build.dart finished [2477 ms]
+
+---
+build.dart --machine --changed=app.js
+
+build.dart finished [2479 ms]
+
+---
+build.dart --machine --changed=bbcNews
+
+build.dart finished [2650 ms]
+
+---
+build.dart --machine --changed=theGuardian
+
+build.dart finished [2694 ms]
+

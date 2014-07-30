@@ -25,7 +25,7 @@ if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
   var client = twilio(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
 }
 
-app.use('/api/phonecall',function(req,res,next){
+app.all('/api/phonecall',function(req,res,next){
 	//Create TwiML response
 	var twiml = new twilio.TwimlResponse();
 	twiml.say('Welcome to the disbility assistance service.')
@@ -39,12 +39,12 @@ app.use('/api/phonecall',function(req,res,next){
 	res.send(twiml.toString());
 });
 
-app.use('/api/news/bbcNews',function(req,res,next){
+app.all('/api/news/:source',function (req,res,next){
   reader.updateCache();
-  res.end(reader.genScript("bbcNews"));
+  res.end(reader.genScript(req.param("source")));
 });
 
-app.use('/api/sources', function (req, res, next) {
+app.all('/api/sources', function (req, res, next) {
   res.send(require('./rssFeeds'));
 });
 

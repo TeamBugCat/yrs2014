@@ -508,3 +508,13 @@ build.dart --machine --changed=theGuardian
 
 build.dart finished [2694 ms]
 
+---
+build.dart --machine --changed=app.js
+
+build.dart finished [2644 ms]
+
+---
+build.dart --machine --changed=app.js
+
+build.dart finished [2541 ms]
+

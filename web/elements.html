@@ -1,24 +1,22 @@
 <link rel="import" href="../packages/polymer/polymer.html">
-<polymer-element name="source-selection" attributes="imgsrc" noscript>
+<link rel="import" href="packages/core_elements/core_item.html">
+<link rel="import" href="packages/paper_elements/paper_checkbox.html">
+
+<polymer-element name="source-selection" attributes="news checked">
   <template>
     <style>
-      .thumb {
-          display: block;
-          overflow: hidden;
-          height: 200px;
-          width: 200px;
-      }
-
-      .thumb img {
-          display: block; /* Otherwise it keeps some space around baseline */
-          min-width: 100%;    /* Scale up to fill container width */
-          min-height: 100%;   /* Scale up to fill container height */
-          -ms-interpolation-mode: bicubic; /* Scaled images look a bit better in IE now */
+      core-item.shady {
+        box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.4);
+        padding-left: 1em; padding-right: 1em;
       }
     </style>
 
-    <div class="box" width="{{styles.width}}" height="{{styles.width}}">
-      <img src="{{imgsrc}}" />
-    </div>
+    <core-item class="shady">
+      <content></content>
+      <div flex>{{sourceName}}</div>
+      <paper-checkbox checked?="{{checked}}"></paper-checkbox>
+    </core-item>
   </template>
+  
+  <script type="application/dart" src="elements.dart"></script>
 </polymer-element>

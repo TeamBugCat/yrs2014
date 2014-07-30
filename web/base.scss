@@ -77,8 +77,7 @@ div.rounded-shadow {
     text-align: center;
   }
 
-  .test {
-    @include span-columns(2);
-    max-width: 200px;
+  .select {
+    @include span-columns(3);
   }
 }

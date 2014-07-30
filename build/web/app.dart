@@ -7,14 +7,7 @@ import "dart:math";
 import "dart:convert";
 import 'package:polymer/polymer.dart';
 
-export "package:polymer/polymer.dart";
-export "package:core_elements/core_icon_button.dart";
-export "package:paper_elements/paper_menu_button.dart";
-export "package:core_elements/core_toolbar.dart";
-export "package:paper_elements/paper_item.dart";
-
 part "api_interface.dart";
-part "elements.dart";
 
 Timer t;
 
@@ -22,6 +15,8 @@ const List<int> KCODE = const [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
 List<int> currentKcodeList = [];
 
 void main() {
+  initPolymer();
+  
   window.onClick.listen((MouseEvent e) {
     print("Clickety click at ${e.client.x},${e.client.y}");
   });

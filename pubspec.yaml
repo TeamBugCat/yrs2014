@@ -6,3 +6,6 @@ dependencies:
   core_elements: any
   paper_elements: any
   polymer: any
+transformers:
+- polymer
+  

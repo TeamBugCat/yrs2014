@@ -41,6 +41,8 @@ core-menu-button::shadow core-menu::shadow div {
   border: 1px solid green;
 }
 
+
+
 div.rounded-shadow {
   background-color: white;
   border: 1px solid lightgray;
@@ -73,5 +75,10 @@ div.rounded-shadow {
   .title {
     @include span-columns(12);
     text-align: center;
+  }
+
+  .test {
+    @include span-columns(2);
+    max-width: 200px;
   }
 }

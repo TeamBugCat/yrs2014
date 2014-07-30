@@ -6589,7 +6589,7 @@ var $$ = {};
   },
   HtmlElement: {
     "^": "Element;",
-    "%": "HTMLAppletElement|HTMLBRElement|HTMLBaseElement|HTMLBodyElement|HTMLButtonElement|HTMLCanvasElement|HTMLContentElement|HTMLDListElement|HTMLDataListElement|HTMLDetailsElement|HTMLDialogElement|HTMLDirectoryElement|HTMLDivElement|HTMLEmbedElement|HTMLFieldSetElement|HTMLFontElement|HTMLFrameElement|HTMLFrameSetElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLIFrameElement|HTMLImageElement|HTMLInputElement|HTMLKeygenElement|HTMLLIElement|HTMLLabelElement|HTMLLegendElement|HTMLLinkElement|HTMLMapElement|HTMLMarqueeElement|HTMLMenuElement|HTMLMetaElement|HTMLMeterElement|HTMLModElement|HTMLOListElement|HTMLObjectElement|HTMLOptGroupElement|HTMLOptionElement|HTMLOutputElement|HTMLParagraphElement|HTMLParamElement|HTMLPreElement|HTMLProgressElement|HTMLQuoteElement|HTMLScriptElement|HTMLShadowElement|HTMLSourceElement|HTMLSpanElement|HTMLStyleElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTextAreaElement|HTMLTitleElement|HTMLTrackElement|HTMLUListElement|HTMLUnknownElement;HTMLElement;HtmlElement_DomProxyMixin|CoreIconButton|HtmlElement_DomProxyMixin0|CoreToolbar|HtmlElement_DomProxyMixin1|PaperFocusable|HtmlElement_DomProxyMixin2|PaperItem|PaperMenuButton|HtmlElement_Polymer|HtmlElement_Polymer_ChangeNotifier|PolymerElement"
+    "%": "HTMLAppletElement|HTMLBRElement|HTMLBaseElement|HTMLBodyElement|HTMLButtonElement|HTMLCanvasElement|HTMLContentElement|HTMLDListElement|HTMLDataListElement|HTMLDetailsElement|HTMLDialogElement|HTMLDirectoryElement|HTMLDivElement|HTMLEmbedElement|HTMLFieldSetElement|HTMLFontElement|HTMLFrameElement|HTMLFrameSetElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLIFrameElement|HTMLImageElement|HTMLInputElement|HTMLKeygenElement|HTMLLIElement|HTMLLabelElement|HTMLLegendElement|HTMLLinkElement|HTMLMapElement|HTMLMarqueeElement|HTMLMenuElement|HTMLMetaElement|HTMLMeterElement|HTMLModElement|HTMLOListElement|HTMLObjectElement|HTMLOptGroupElement|HTMLOptionElement|HTMLOutputElement|HTMLParagraphElement|HTMLParamElement|HTMLPreElement|HTMLProgressElement|HTMLQuoteElement|HTMLScriptElement|HTMLShadowElement|HTMLSourceElement|HTMLSpanElement|HTMLStyleElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTextAreaElement|HTMLTitleElement|HTMLTrackElement|HTMLUListElement|HTMLUnknownElement;HTMLElement;HtmlElement_DomProxyMixin|CoreIconButton|HtmlElement_DomProxyMixin0|CoreToolbar|HtmlElement_DomProxyMixin1|PaperFocusable|HtmlElement_DomProxyMixin2|PaperItem|PaperMenuButton|HtmlElement_Polymer|HtmlElement_Polymer_ChangeNotifier|PolymerElement|SourceSelectionElement"
   },
   _EntryArray: {
     "^": "Interceptor;",
@@ -7730,6 +7730,9 @@ var $$ = {};
       var menu = document.querySelector(".menubar");
       J.set$backgroundColor$x(menu.style, "rgb(" + C.C__JSRandom.nextInt$1(255) + ", " + C.C__JSRandom.nextInt$1(255) + ", " + C.C__JSRandom.nextInt$1(255) + ")");
     }, "call$1", null, 2, 0, null, 41, "call"]
+  },
+  SourceSelectionElement: {
+    "^": "PolymerElement;imgsrc,change_notifier$ChangeNotifier$_changes,change_notifier$ChangeNotifier$_records,polymer$Polymer$_polymer$_element,polymer$Polymer$_namedObservers,polymer$Polymer$_observers,polymer$Polymer$_unbound,polymer$Polymer$_unbindAllJob,polymer$Polymer$_propertyObserver,polymer$Polymer$_readied,polymer$Polymer$_jsElem,polymer$Polymer$_hasBeenAttached,polymer$Polymer$shadowRoots,polymer$Polymer$$"
   }
 },
 1],
@@ -8163,6 +8166,7 @@ C.Type_IIj = H.createRuntimeType('PaperMenuButton');
 C.Type_K6o = H.createRuntimeType('PaperFocusable');
 C.Type_NlB = H.createRuntimeType('NativeTypedArrayOfDouble');
 C.Type_QyU = H.createRuntimeType('WindowEventHandlers');
+C.Type_U43 = H.createRuntimeType('SourceSelectionElement');
 C.Type_o0y = H.createRuntimeType('PaperItem');
 C.Type_s8b = H.createRuntimeType('AutoBindingElement');
 C.Type_wOW = H.createRuntimeType('NativeTypedArrayOfInt');

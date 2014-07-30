@@ -1,0 +1,455 @@
+---
+build.dart --machine --changed=web/elements.dart
+
+build.dart finished [2808 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2642 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2616 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [3386 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2799 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2809 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [2960 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2795 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2574 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2765 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2731 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [3194 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2746 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [3183 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [2971 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2623 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2623 ms]
+
+---
+build.dart --machine --changed=web/elements.dart
+
+build.dart finished [2562 ms]
+
+---
+build.dart --machine --changed=web/elements.dart
+
+build.dart finished [2559 ms]
+
+---
+build.dart --machine --changed=web/elements.dart
+
+build.dart finished [2572 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [2724 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [2807 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2575 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [2623 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [2667 ms]
+
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [2644 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [3316 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2578 ms]
+
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [2594 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [2823 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2584 ms]
+
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [2650 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [3398 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2578 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2600 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2578 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2566 ms]
+
+---
+build.dart --machine --changed=web/elements.dart
+
+build.dart finished [2689 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2587 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2590 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2574 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [3092 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2719 ms]
+
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [2631 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [3143 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2695 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2601 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [2689 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [3031 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2783 ms]
+
+---
+build.dart --machine --changed=web/elements.dart
+
+build.dart finished [2642 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2552 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2787 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [3205 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2688 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [2663 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [2763 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2565 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2560 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2655 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2686 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2606 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2614 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [3313 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2625 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2567 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2543 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2576 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2619 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2586 ms]
+
+---
+build.dart --machine --changed=web/elements.dart
+
+build.dart finished [2661 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [3300 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [2608 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [2612 ms]
+
+---
+build.dart --machine --changed=readOut.js --changed=reader.js --changed=rssFeeds.js --changed=templates/callScr...
+
+build.dart finished [2741 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2668 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2544 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2553 ms]
+
+---
+build.dart --machine --changed=rssFeeds.js
+
+build.dart finished [2594 ms]
+
+---
+build.dart --machine --changed=rssFeeds.js
+
+build.dart finished [2546 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2700 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2575 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2573 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2570 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2681 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2561 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2574 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2558 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2584 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2655 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [2574 ms]
+

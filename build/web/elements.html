@@ -1,0 +1,16 @@
+<link rel="import" href="../packages/polymer/polymer.html">
+<polymer-element name="source-selection" attributes="imgsrc" noscript>
+  <template>
+    <style>
+      .box {
+        background-repeat: norepeat;
+        background-size: cover;
+        border: 1px solid black;
+      }
+    </style>
+
+    <div class="box" width="{{ styles.width }}" height="{{ styles.width }}">
+      <div class="content"><content></content></div>
+    </div>
+  </template>
+</polymer-element>

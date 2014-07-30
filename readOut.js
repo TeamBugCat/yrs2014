@@ -23,7 +23,7 @@ function updateCache(){
     }}
   )  
  }
-}}
+}
 exports.updateCache = updateCache;
 
 function readRss(id){

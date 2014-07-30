@@ -7,12 +7,16 @@ var parser = require('parse-rss');
 var rssFeed = require("./rssFeeds");
 var data;
 
-function updateCache(){
-  parser(rssFeed.bbcNews.index,function(err,rss){
+function cacheFileName(id) {
+  return "./feeds/"+id+".json~";
+}
+
+function updateCache(id) {
+  parser(rssFeed[id].index, function(err,rss){
     if(err){
       console.log("Error: " + err)
-    }else{
-      fs.writeFile("./feeds/bbc-rss.json", JSON.stringify(rss), function(err) {
+    } else {
+      fs.writeFile(cacheFileName(id), JSON.stringify(rss), function(err) {
           if(err) {
               console.log(err);
           } else {
@@ -36,29 +40,24 @@ function updateCache(){
 }
 exports.updateCache = updateCache;
 
-function getNews(){
-	if (!fs.existsSync('./feeds/bbc-rss.json')) {
-			updateCache();
+function fetchNews(){
+  for (var id in rssFeed) {
+	  if (!fs.existsSync(cacheFileName(id)) {
+			  updateCache(id);
+	  }
+	  fs.readFile(cacheFileName(id), function (error, data) {
+		  if (error){
+			  console.error("Error: " + error);
+		  }else{
+			  //console.log(data.toString("utf8"));
+        var news = JSON.parse(data.toString("utf8"));
+		  }
+	  });
 	}
-	fs.readFile('./feeds/bbc-rss.json', function (error, data) {
-		if (error){
-			console.error("Error: " + error);
-		}else{
-			console.log(data.toString("utf8"));
-      var news=JSON.parse(data.toString("utf8"));
-		}
-	});
 }
 exports.getNews = getNews;
 
-function showNews(){
-  	fs.readFile('./feeds/bbc-rss.json', function (error, data) {
-		if (error){
-			console.error("Error: " + error);
-		}else{
-			console.log(data.toString("utf8"));
-      			 return JSON.parse(data.toString("utf8"));
-		}
-	});
+function getNews(id){
+  if (!fs.exists
 }
 exports.showNews = showNews;

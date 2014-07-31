@@ -41,7 +41,9 @@ app.all('/api/phonecall',function(req,res,next){
 
 app.all('/api/news/:source',function (req,res,next){
   res.set('Content-Type', 'text/xml');
-  res.send(reader.genScript2(req.param("source")));
+  reader.fetchTwimlAsync(req.param("source"), function (twiml) {
+    res.send(twiml);
+  });
 });
 
 app.all('/api/sources', function (req, res, next) {

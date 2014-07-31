@@ -20,6 +20,22 @@ function updateCache(){
 }
 exports.updateCache = updateCache;
 
+function escapeSqBrackets(string){
+  return string.replace(/\[.*\]/g, "");
+}
+
+function fetchTwimlAsync(id, callback) {
+  parser(rssFeeds[id].index, function (err, rss) {
+    if (err) {
+      console.log(err);
+      return;
+    } else {
+      callback(genScriptNoCache(rss));
+    }
+  });
+}
+exports.fetchTwimlAsync = fetchTwimlAsync;
+
 function parseAndSave(id, feed) {
   parser(feed.index, function(err,rss){
       if(err){
@@ -75,4 +91,21 @@ function genScript2(id){
   var template = fs.readFileSync('templates/callScript.txt','utf8');
   return mustache.render(template,{rss:newRss});
 })}
+
+function genScriptNoCache(rss) {
+  var newRss = [];
+
+  for (var i = 0; i < rss.length; i++) {
+    var item = rss[i];
+    var x = {};
+    x.title = item.title;
+    x.description = escapeSqBrackets(htmlToText.fromString(item.description,{}));
+    newRss.push(x);
+  }
+  
+  var template = fs.readFileSync('templates/callScript.txt','utf8');
+  return mustache.render(template,{rss:newRss});
+}
+exports.genScriptNoCache = genScriptNoCache;
+
 exports.genScript2 = genScript2;

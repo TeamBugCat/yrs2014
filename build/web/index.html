@@ -3990,7 +3990,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <core-toolbar class="menubar">
       <span flex=""><span style="font-size: 1.5em;">Title</span></span>
       <core-menu-button icon="menu" id="menu" halign="right">
-        <paper-item label="A________"></paper-item>
+        <style>core-menu-button a {text-decoration:none; color: inherit}
+        </style>
+
+        <paper-item flex="" label="About the Project" style="min-width: 80vw;">
+          <a href="http://www.polymer-project.org"></a>
+        </paper-item>
       </core-menu-button>
     </core-toolbar>
 

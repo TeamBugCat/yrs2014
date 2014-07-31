@@ -1734,3 +1734,217 @@ build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/
 
 build.dart finished [4042 ms]
 
+---
+build.dart --machine --changed=pages/stylesheet1.0.css
+
+build.dart finished [4167 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4271 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5514 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4166 ms]
+
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [4107 ms]
+
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [4198 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5418 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4188 ms]
+
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [4362 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5798 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4286 ms]
+
+---
+build.dart --machine --changed=app.js --changed=pages/index.html --changed=readOut.js
+
+build.dart finished [4103 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4183 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4330 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5457 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4187 ms]
+
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [4160 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4086 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4118 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4292 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5570 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4187 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"Trailing solidus not allowed on element a","line":41,"charStart":1576,"charEnd":1634}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"Unexpected end tag (paper-item). Ignored.","line":42,"charStart":1643,"charEnd":1656}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"Unexpected end tag (core-menu-button). Ignored.","line":43,"charStart":1663,"charEnd":1682}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"Unexpected end tag (core-toolbar). Ignored.","line":44,"charStart":1687,"charEnd":1702}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"Unexpected end tag (body). Missing end tag (a).","line":56,"charStart":2108,"charEnd":2115}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"Trailing solidus not allowed on element a","line":41,"charStart":1576,"charEnd":1634}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"Unexpected end tag (paper-item). Ignored.","line":42,"charStart":1643,"charEnd":1656}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"Unexpected end tag (core-menu-button). Ignored.","line":43,"charStart":1663,"charEnd":1682}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"Unexpected end tag (core-toolbar). Ignored.","line":44,"charStart":1687,"charEnd":1702}}]
+[{"method":"warning","params":{"file":"web/index.html","message":"Unexpected end tag (body). Missing end tag (a).","line":56,"charStart":2108,"charEnd":2115}}]
+build.dart finished [4088 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4115 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5612 ms]
+
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [6265 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4295 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4107 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4273 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5479 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4107 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4338 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5397 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4083 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4406 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5249 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4067 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4104 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [4866 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4071 ms]
+
+---
+build.dart --machine --changed=readOut.js
+
+build.dart finished [3935 ms]
+

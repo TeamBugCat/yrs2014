@@ -2303,3 +2303,90 @@ build.dart --machine --changed=pubspec.yaml
 
 build.dart finished [4149 ms]
 
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4095 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4150 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4006 ms]
+
+---
+build.dart --machine --changed=web/app.dart
+
+build.dart finished [3871 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5111 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4137 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (paper-checkbox). Ignored.","line":24,"charStart":783,"charEnd":800}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (core-item). Ignored.","line":25,"charStart":805,"charEnd":817}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (paper-checkbox). Ignored.","line":24,"charStart":783,"charEnd":800}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (core-item). Ignored.","line":25,"charStart":805,"charEnd":817}}]
+build.dart finished [3958 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [3925 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+
+build.dart finished [3936 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [4492 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [3935 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [3948 ms]
+
+---
+build.dart --machine --changed=web/elements.html
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (paper-radio-button). Ignored.","line":24,"charStart":802,"charEnd":823}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (core-item). Ignored.","line":25,"charStart":828,"charEnd":840}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (paper-radio-button). Ignored.","line":24,"charStart":802,"charEnd":823}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (core-item). Ignored.","line":25,"charStart":828,"charEnd":840}}]
+build.dart finished [4064 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (paper-radio-button). Ignored.","line":24,"charStart":802,"charEnd":823}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (core-item). Ignored.","line":25,"charStart":828,"charEnd":840}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (paper-radio-button). Ignored.","line":24,"charStart":802,"charEnd":823}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (core-item). Ignored.","line":25,"charStart":828,"charEnd":840}}]
+build.dart finished [5028 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (paper-radio-button). Ignored.","line":24,"charStart":802,"charEnd":823}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (core-item). Ignored.","line":25,"charStart":828,"charEnd":840}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (paper-radio-button). Ignored.","line":24,"charStart":802,"charEnd":823}}]
+[{"method":"warning","params":{"file":"web/elements.html","message":"Unexpected end tag (core-item). Ignored.","line":25,"charStart":828,"charEnd":840}}]
+build.dart finished [4177 ms]
+

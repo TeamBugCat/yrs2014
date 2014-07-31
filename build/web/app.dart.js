@@ -20174,7 +20174,7 @@ var $$ = {};
     call$1: [function(map) {
       var $parent, t1, t2, key, value, t3, line, elem;
       P.print("Available sources");
-      $parent = document.querySelector("section#news_select");
+      $parent = document.querySelector("#news_select");
       for (t1 = J.get$iterator$ax(H.interceptedTypeCast(map, "$isMap").get$keys()), t2 = J.getInterceptor$asx(map); t1.moveNext$0();) {
         key = t1.get$current();
         value = t2.$index(map, key);

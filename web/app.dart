@@ -33,7 +33,7 @@ void main() {
 
   sources..then((map) {
     print("Available sources");
-    Element parent = querySelector("section#news_select");
+    Element parent = querySelector("#news_select");
     for (var key in (map as Map).keys) {
       var value = map[key];
 

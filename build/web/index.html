@@ -12,6 +12,7 @@
     
     
     
+    
 
     
 
@@ -3161,85 +3162,10 @@ polyfill-next-selector { content: ':host .indent'; }
 
 
 
-
-
-
-
-<style>/*
-Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
-html /deep/ core-item {
-  display: block;
-  position: relative;
-  height: 40px;
-  white-space: nowrap;
-}
-
-html /deep/ core-item.core-selected {
-  font-weight: bold;
-}
-
-html /deep/ core-item::shadow core-icon {
-  margin: 0 16px 0 4px;
-}
-
-html /deep/ core-item::shadow ::content > a {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-</style><polymer-element name="core-item" attributes="label icon src" horizontal="" center="" layout="">
-<template>
-
-  <core-icon src="{{src}}" icon="{{icon}}" hidden?="{{!src &amp;&amp; !icon}}"></core-icon>{{label}}<content></content>
-  
-</template>
 <script>
-
-  Polymer('core-item', {
-    
-    /**
-     * The URL of an image for the icon.
-     *
-     * @attribute src
-     * @type string
-     * @default ''
-     */
-
-    /**
-     * Specifies the icon from the Polymer icon set.
-     *
-     * @attribute icon
-     * @type string
-     * @default ''
-     */
-
-    /**
-     * Specifies the label for the menu item.
-     *
-     * @attribute label
-     * @type string
-     * @default ''
-     */
-
-  });
-
+// This empty script is here to workaround issue
+// https://github.com/dart-lang/core-elements/issues/11
 </script>
-</polymer-element>
-
-
-
-
-
-
 
 <polymer-element name="paper-radio-button" role="radio" tabindex="0" aria-checked="false">
 <template>
@@ -3433,6 +3359,128 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   
 </script>
 </polymer-element>
+<polymer-element name="paper-radio-group" extends="core-selector" role="radiogroup">
+
+  <template>
+  
+    <style>
+    
+      :host {
+        display: inline-block;
+      }
+  
+      polyfill-next-selector { content: ':host > *'; }
+      ::content > * {
+        padding: 12px;
+      }
+    
+    </style>
+  
+    <shadow></shadow>
+    
+  </template>
+  
+  <script>
+  
+    Polymer('paper-radio-group', {
+      
+      selectedAttribute: 'checked',
+      activateEvent: 'paper-radio-button-activate'
+      
+    });
+  
+  </script>
+  
+</polymer-element>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>/*
+Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+*/
+
+html /deep/ core-item {
+  display: block;
+  position: relative;
+  height: 40px;
+  white-space: nowrap;
+}
+
+html /deep/ core-item.core-selected {
+  font-weight: bold;
+}
+
+html /deep/ core-item::shadow core-icon {
+  margin: 0 16px 0 4px;
+}
+
+html /deep/ core-item::shadow ::content > a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+</style><polymer-element name="core-item" attributes="label icon src" horizontal="" center="" layout="">
+<template>
+
+  <core-icon src="{{src}}" icon="{{icon}}" hidden?="{{!src &amp;&amp; !icon}}"></core-icon>{{label}}<content></content>
+  
+</template>
+<script>
+
+  Polymer('core-item', {
+    
+    /**
+     * The URL of an image for the icon.
+     *
+     * @attribute src
+     * @type string
+     * @default ''
+     */
+
+    /**
+     * Specifies the icon from the Polymer icon set.
+     *
+     * @attribute icon
+     * @type string
+     * @default ''
+     */
+
+    /**
+     * Specifies the label for the menu item.
+     *
+     * @attribute label
+     * @type string
+     * @default ''
+     */
+
+  });
+
+</script>
+</polymer-element>
+
+
+
+
+
 <polymer-element name="paper-checkbox" extends="paper-radio-button" role="checkbox">
 <template>
 
@@ -3752,9 +3800,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 
 
-
-
-
 <!-- TODO: would be nice to inherit from label to get .htmlFor, and .control,
            but the latter is readonly. -->
 <!-- TODO: support off center arrows. -->
@@ -3969,8 +4014,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <core-item class="shady">
       <content></content>
       <div flex=""><core-tooltip large="" label="{{sourceUrl}}">{{sourceName}}</core-tooltip></div>
-      <paper-checkbox checked?="{{checked}}"></paper-checkbox>
-    </core-item>
+      <paper-checkbox checked?="{{checked}}">
+    </paper-checkbox></core-item>
   </template>
 
   

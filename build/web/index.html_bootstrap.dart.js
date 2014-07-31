@@ -4191,7 +4191,7 @@ var $$ = {};
     $.objectAccessor = new O.GeneratedObjectAccessorService(t1, t2, C.Map_empty);
     $.typeInspector = new O.GeneratedTypeInspectorService(t3, t4, false);
     $.symbolConverter = t5;
-    $.initializers = [S.upgradeCoreMeta$closure(), M.upgradeCoreIconset$closure(), L.upgradeCoreIcon$closure(), M.upgradeCoreIconButton$closure(), T.upgradeCoreSelection$closure(), S.upgradeCoreSelector$closure(), O.upgradeCoreMenu$closure(), V.upgradeCoreTransition$closure(), E.upgradeCoreKeyHelper$closure(), D.upgradeCoreOverlayLayer$closure(), U.upgradeCoreOverlay$closure(), D.upgradeCoreMenuButton$closure(), V.upgradeCoreToolbar$closure(), F.upgradePaperRipple$closure(), X.upgradePaperItem$closure(), K.upgradeCoreItem$closure(), V.upgradePaperRadioButton$closure(), R.upgradePaperCheckbox$closure(), G.upgradeCoreTooltip$closure(), new E.main_closure39()];
+    $.initializers = [S.upgradeCoreMeta$closure(), M.upgradeCoreIconset$closure(), L.upgradeCoreIcon$closure(), M.upgradeCoreIconButton$closure(), T.upgradeCoreSelection$closure(), S.upgradeCoreSelector$closure(), O.upgradeCoreMenu$closure(), V.upgradeCoreTransition$closure(), E.upgradeCoreKeyHelper$closure(), D.upgradeCoreOverlayLayer$closure(), U.upgradeCoreOverlay$closure(), D.upgradeCoreMenuButton$closure(), V.upgradeCoreToolbar$closure(), F.upgradePaperRipple$closure(), X.upgradePaperItem$closure(), V.upgradePaperRadioButton$closure(), K.upgradePaperRadioGroup$closure(), K.upgradeCoreItem$closure(), R.upgradePaperCheckbox$closure(), G.upgradeCoreTooltip$closure(), new E.main_closure39()];
     $.deployMode = true;
     E.main();
   }, "call$0", "main0$closure", 0, 0, 13],
@@ -4980,6 +4980,20 @@ var $$ = {};
   },
   HtmlElement_DomProxyMixin11: {
     "^": "HtmlElement+DomProxyMixin;"
+  }
+}],
+["core_elements.paper_radio_group", "package:paper_elements/paper_radio_group.dart", , K, {
+  "^": "",
+  upgradePaperRadioGroup: [function() {
+    return N.registerDartType("paper-radio-group", C.Type_gkc, null);
+  }, "call$0", "upgradePaperRadioGroup$closure", 0, 0, 14],
+  PaperRadioGroup: {
+    "^": "CoreSelector;common$DomProxyMixin$_proxy",
+    static: {PaperRadioGroup$created: function(receiver) {
+        receiver.toString;
+        C.PaperRadioGroup_methods.Element$created$0(receiver);
+        return receiver;
+      }}
   }
 }],
 ["core_elements.paper_ripple", "package:paper_elements/paper_ripple.dart", , F, {
@@ -12223,7 +12237,7 @@ var $$ = {};
   },
   HtmlElement: {
     "^": "Element;",
-    "%": "HTMLAppletElement|HTMLBRElement|HTMLCanvasElement|HTMLContentElement|HTMLDListElement|HTMLDataListElement|HTMLDirectoryElement|HTMLDivElement|HTMLFontElement|HTMLFrameElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLMarqueeElement|HTMLMenuElement|HTMLModElement|HTMLParagraphElement|HTMLPreElement|HTMLQuoteElement|HTMLShadowElement|HTMLSpanElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTitleElement|HTMLUListElement|HTMLUnknownElement;HTMLElement;HtmlElement_DomProxyMixin|CoreIcon|HtmlElement_DomProxyMixin0|CoreIconButton|HtmlElement_DomProxyMixin1|CoreMeta|CoreIconset|HtmlElement_DomProxyMixin2|CoreItem|HtmlElement_DomProxyMixin3|CoreKeyHelper|HtmlElement_DomProxyMixin4|CoreSelector|CoreMenu|HtmlElement_DomProxyMixin5|CoreMenuButton|HtmlElement_DomProxyMixin6|CoreOverlay|HtmlElement_DomProxyMixin7|CoreOverlayLayer|HtmlElement_DomProxyMixin8|CoreSelection|HtmlElement_DomProxyMixin9|CoreToolbar|HtmlElement_DomProxyMixin10|CoreTooltip|CoreTransition|HtmlElement_DomProxyMixin11|PaperRadioButton|PaperCheckbox|HtmlElement_DomProxyMixin12|PaperItem|HtmlElement_DomProxyMixin13|PaperRipple|HtmlElement_Polymer|HtmlElement_Polymer_ChangeNotifier|PolymerElement|PolymerElement_ChangeNotifier|SourceSelectionElement"
+    "%": "HTMLAppletElement|HTMLBRElement|HTMLCanvasElement|HTMLContentElement|HTMLDListElement|HTMLDataListElement|HTMLDirectoryElement|HTMLDivElement|HTMLFontElement|HTMLFrameElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLMarqueeElement|HTMLMenuElement|HTMLModElement|HTMLParagraphElement|HTMLPreElement|HTMLQuoteElement|HTMLShadowElement|HTMLSpanElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTitleElement|HTMLUListElement|HTMLUnknownElement;HTMLElement;HtmlElement_DomProxyMixin|CoreIcon|HtmlElement_DomProxyMixin0|CoreIconButton|HtmlElement_DomProxyMixin1|CoreMeta|CoreIconset|HtmlElement_DomProxyMixin2|CoreItem|HtmlElement_DomProxyMixin3|CoreKeyHelper|HtmlElement_DomProxyMixin4|CoreSelector|CoreMenu|HtmlElement_DomProxyMixin5|CoreMenuButton|HtmlElement_DomProxyMixin6|CoreOverlay|HtmlElement_DomProxyMixin7|CoreOverlayLayer|HtmlElement_DomProxyMixin8|CoreSelection|HtmlElement_DomProxyMixin9|CoreToolbar|HtmlElement_DomProxyMixin10|CoreTooltip|CoreTransition|HtmlElement_DomProxyMixin11|PaperRadioButton|PaperCheckbox|HtmlElement_DomProxyMixin12|PaperItem|PaperRadioGroup|HtmlElement_DomProxyMixin13|PaperRipple|HtmlElement_Polymer|HtmlElement_Polymer_ChangeNotifier|PolymerElement|PolymerElement_ChangeNotifier|SourceSelectionElement"
   },
   _EntryArray: {
     "^": "Interceptor;",
@@ -16279,7 +16293,7 @@ var $$ = {};
     poly.setAttribute("name", "auto-binding-dart");
     poly.setAttribute("extends", "template");
     J.$index$asx($.get$_polymerElementProto(), "init").apply$2$thisArg([], poly);
-    for (t1 = H.setRuntimeTypeInfo(new H.ListIterator(initializers, 20, 0, null), [H.getTypeArgumentByIndex(initializers, 0)]); t1.moveNext$0();)
+    for (t1 = H.setRuntimeTypeInfo(new H.ListIterator(initializers, 21, 0, null), [H.getTypeArgumentByIndex(initializers, 0)]); t1.moveNext$0();)
       t1._current.call$0();
   },
   _hookJsPolymer: function() {
@@ -21824,7 +21838,7 @@ var $$ = {};
     call$1: [function(map) {
       var $parent, t1, t2, key, value, t3, line, elem;
       P.print("Available sources");
-      $parent = document.querySelector("section#news_select");
+      $parent = document.querySelector("#news_select");
       for (t1 = J.get$iterator$ax(H.interceptedTypeCast(map, "$isMap").get$keys()), t2 = J.getInterceptor$asx(map); t1.moveNext$0();) {
         key = t1.get$current();
         value = t2.$index(map, key);
@@ -22595,6 +22609,7 @@ C.NodeList_methods = W.NodeList.prototype;
 C.PaperCheckbox_methods = R.PaperCheckbox.prototype;
 C.PaperItem_methods = X.PaperItem.prototype;
 C.PaperRadioButton_methods = V.PaperRadioButton.prototype;
+C.PaperRadioGroup_methods = K.PaperRadioGroup.prototype;
 C.PaperRipple_methods = F.PaperRipple.prototype;
 C.PlainJavaScriptObject_methods = J.PlainJavaScriptObject.prototype;
 C.PolymerElement_methods = A.PolymerElement.prototype;
@@ -22878,6 +22893,7 @@ C.Type_dVs = H.createRuntimeType('DateTime');
 C.Type_dynamic = H.createRuntimeType('dynamic');
 C.Type_ePO = H.createRuntimeType('SourceSelectionElement');
 C.Type_eZO = H.createRuntimeType('Null');
+C.Type_gkc = H.createRuntimeType('PaperRadioGroup');
 C.Type_irB = H.createRuntimeType('Uint32List');
 C.Type_jWj = H.createRuntimeType('CoreIcon');
 C.Type_jjv = H.createRuntimeType('CoreSelection');
@@ -22929,7 +22945,7 @@ $.TemplateBindExtension__initStyles = null;
 $.TemplateBindExtension__initBaseUriWorkaround = null;
 $.enableBindingsReflection = false;
 $.t = null;
-$.mapTypeToInterceptor = [C.Type_fPs, W.HtmlElement, {}, C.Type_3FG, M.CoreIconButton, {created: M.CoreIconButton$created}, C.Type_5ot, O.CoreMenu, {created: O.CoreMenu$created}, C.Type_752, V.CoreToolbar, {created: V.CoreToolbar$created}, C.Type_ACQ, M.CoreIconset, {created: M.CoreIconset$created}, C.Type_AHF, H.NativeTypedArray, {"": H.NativeTypedArray$}, C.Type_AyE, F.PaperRipple, {created: F.PaperRipple$created}, C.Type_EQs, W.GlobalEventHandlers, {}, C.Type_FKn, D.CoreOverlayLayer, {created: D.CoreOverlayLayer$created}, C.Type_I2I, A.PolymerElement, {created: A.PolymerElement$created}, C.Type_IQT, R.PaperCheckbox, {created: R.PaperCheckbox$created}, C.Type_Lpl, D.CoreMenuButton, {created: D.CoreMenuButton$created}, C.Type_NlB, H.NativeTypedArrayOfDouble, {"": H.NativeTypedArrayOfDouble$}, C.Type_QW8, S.CoreSelector, {created: S.CoreSelector$created}, C.Type_Qic, K.CoreItem, {created: K.CoreItem$created}, C.Type_QyU, W.WindowEventHandlers, {}, C.Type_TMJ, U.CoreOverlay, {created: U.CoreOverlay$created}, C.Type_X8O, E.CoreKeyHelper, {created: E.CoreKeyHelper$created}, C.Type_aB0, S.CoreMeta, {created: S.CoreMeta$created}, C.Type_b9q, V.PaperRadioButton, {created: V.PaperRadioButton$created}, C.Type_ePO, A.SourceSelectionElement, {created: A.SourceSelectionElement$created}, C.Type_jWj, L.CoreIcon, {created: L.CoreIcon$created}, C.Type_jjv, T.CoreSelection, {created: T.CoreSelection$created}, C.Type_o0y, X.PaperItem, {created: X.PaperItem$created}, C.Type_s8b, Y.AutoBindingElement, {created: Y.AutoBindingElement$created}, C.Type_sMI, G.CoreTooltip, {created: G.CoreTooltip$created}, C.Type_su2, V.CoreTransition, {created: V.CoreTransition$created}, C.Type_wOW, H.NativeTypedArrayOfInt, {"": H.NativeTypedArrayOfInt$}];
+$.mapTypeToInterceptor = [C.Type_fPs, W.HtmlElement, {}, C.Type_3FG, M.CoreIconButton, {created: M.CoreIconButton$created}, C.Type_5ot, O.CoreMenu, {created: O.CoreMenu$created}, C.Type_752, V.CoreToolbar, {created: V.CoreToolbar$created}, C.Type_ACQ, M.CoreIconset, {created: M.CoreIconset$created}, C.Type_AHF, H.NativeTypedArray, {"": H.NativeTypedArray$}, C.Type_AyE, F.PaperRipple, {created: F.PaperRipple$created}, C.Type_EQs, W.GlobalEventHandlers, {}, C.Type_FKn, D.CoreOverlayLayer, {created: D.CoreOverlayLayer$created}, C.Type_I2I, A.PolymerElement, {created: A.PolymerElement$created}, C.Type_IQT, R.PaperCheckbox, {created: R.PaperCheckbox$created}, C.Type_Lpl, D.CoreMenuButton, {created: D.CoreMenuButton$created}, C.Type_NlB, H.NativeTypedArrayOfDouble, {"": H.NativeTypedArrayOfDouble$}, C.Type_QW8, S.CoreSelector, {created: S.CoreSelector$created}, C.Type_Qic, K.CoreItem, {created: K.CoreItem$created}, C.Type_QyU, W.WindowEventHandlers, {}, C.Type_TMJ, U.CoreOverlay, {created: U.CoreOverlay$created}, C.Type_X8O, E.CoreKeyHelper, {created: E.CoreKeyHelper$created}, C.Type_aB0, S.CoreMeta, {created: S.CoreMeta$created}, C.Type_b9q, V.PaperRadioButton, {created: V.PaperRadioButton$created}, C.Type_ePO, A.SourceSelectionElement, {created: A.SourceSelectionElement$created}, C.Type_gkc, K.PaperRadioGroup, {created: K.PaperRadioGroup$created}, C.Type_jWj, L.CoreIcon, {created: L.CoreIcon$created}, C.Type_jjv, T.CoreSelection, {created: T.CoreSelection$created}, C.Type_o0y, X.PaperItem, {created: X.PaperItem$created}, C.Type_s8b, Y.AutoBindingElement, {created: Y.AutoBindingElement$created}, C.Type_sMI, G.CoreTooltip, {created: G.CoreTooltip$created}, C.Type_su2, V.CoreTransition, {created: V.CoreTransition$created}, C.Type_wOW, H.NativeTypedArrayOfInt, {"": H.NativeTypedArrayOfInt$}];
 Isolate.$lazy($, "globalThis", "globalThis", "get$globalThis", function() {
   return function() {
     return this;

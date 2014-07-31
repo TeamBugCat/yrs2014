@@ -18,12 +18,13 @@ import 'package:core_elements/core_menu_button.dart' as i12;
 import 'package:core_elements/core_toolbar.dart' as i13;
 import 'package:paper_elements/paper_ripple.dart' as i14;
 import 'package:paper_elements/paper_item.dart' as i15;
-import 'package:core_elements/core_item.dart' as i16;
-import 'package:paper_elements/paper_radio_button.dart' as i17;
-import 'package:paper_elements/paper_checkbox.dart' as i18;
-import 'package:core_elements/core_tooltip.dart' as i19;
-import 'elements.dart' as i20;
-import 'app.dart' as i21;
+import 'package:paper_elements/paper_radio_button.dart' as i16;
+import 'package:paper_elements/paper_radio_group.dart' as i17;
+import 'package:core_elements/core_item.dart' as i18;
+import 'package:paper_elements/paper_checkbox.dart' as i19;
+import 'package:core_elements/core_tooltip.dart' as i20;
+import 'elements.dart' as i21;
+import 'app.dart' as i22;
 import 'package:smoke/smoke.dart' show Declaration, PROPERTY, METHOD;
 import 'package:smoke/static.dart' show useGeneratedCode, StaticConfiguration;
 import 'elements.dart' as smoke_0;
@@ -135,11 +136,12 @@ void main() {
       i13.upgradeCoreToolbar,
       i14.upgradePaperRipple,
       i15.upgradePaperItem,
-      i16.upgradeCoreItem,
-      i17.upgradePaperRadioButton,
-      i18.upgradePaperCheckbox,
-      i19.upgradeCoreTooltip,
-      () => Polymer.register('source-selection', i20.SourceSelectionElement),
+      i16.upgradePaperRadioButton,
+      i17.upgradePaperRadioGroup,
+      i18.upgradeCoreItem,
+      i19.upgradePaperCheckbox,
+      i20.upgradeCoreTooltip,
+      () => Polymer.register('source-selection', i21.SourceSelectionElement),
     ]);
-  i21.main();
+  i22.main();
 }

@@ -21,7 +21,7 @@ module.exports={
 	},
 	polygon:{
 		index:"http://www.polygon.com/rss/index.xml",
-		namePretty: "Polygon Games News",
+		namePretty: "Polygon Gaming",
 		logo:""
 	},
 	arsTechnica:{

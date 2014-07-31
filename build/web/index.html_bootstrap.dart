@@ -23,7 +23,7 @@ import 'package:paper_elements/paper_radio_button.dart' as i17;
 import 'package:paper_elements/paper_checkbox.dart' as i18;
 import 'package:core_elements/core_tooltip.dart' as i19;
 import 'elements.dart' as i20;
-import 'index.html.0.dart' as i21;
+import 'app.dart' as i21;
 import 'package:smoke/smoke.dart' show Declaration, PROPERTY, METHOD;
 import 'package:smoke/static.dart' show useGeneratedCode, StaticConfiguration;
 import 'elements.dart' as smoke_0;

@@ -7,6 +7,8 @@ import "dart:math";
 import "dart:convert";
 import 'package:polymer/polymer.dart';
 
+import "elements.dart";
+
 part "api_interface.dart";
 
 Timer t;
@@ -16,11 +18,6 @@ List<int> currentKcodeList = [];
 
 void main() {
   initPolymer();
-  
-  window.onClick.listen((MouseEvent e) {
-    print("Clickety click at ${e.client.x},${e.client.y}");
-  });
-
   window.onKeyDown.listen((KeyboardEvent e) {
     print("Key ${e.keyCode} (charcode) pressed.");
 
@@ -36,8 +33,15 @@ void main() {
 
   sources..then((map) {
     print("Available sources");
-    for (var value in (map as Map).values) {
+    Element parent = querySelector("section#news_select");
+    for (var key in (map as Map).keys) {
+      var value = map[key];
+
       print("${value["namePretty"]}: ${value["index"]}");
+      SourceSelectionElement elem = (document.createElement("source-selection") as SourceSelectionElement);
+      elem.className = "select";
+      elem.news = key;
+      parent.append(elem);
     }
   })
   ..catchError((error) {

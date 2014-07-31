@@ -2135,3 +2135,21 @@ build.dart finished [4260 ms]
 
 ---
 build.dart --machine --changed=pages/CaveJohnsonLemons.mp3 --changed=pages/index.html --changed=pages/johnson.x...
+
+build.dart finished [4103 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4103 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [4622 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4476 ms]
+

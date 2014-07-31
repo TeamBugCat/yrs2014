@@ -5,6 +5,7 @@ var http = require('http');
 var request = require('request');
 var parser = require('parse-rss');
 var mustache = require('mustache');
+var htmlToText = require('html-to-text');
 
 var rssFeeds = require("./rssFeeds");
 
@@ -56,3 +57,20 @@ function genScript(id){
   return mustache.render(template,{rss:rss});
 }
 exports.genScript = genScript;
+
+function genScript2(id){
+  if (!fs.existsSync("./feeds/"+id+".json~")) {
+    updateCache();
+  }
+  var rss = JSON.parse(fs.readFileSync("./feeds/"+id+".json~",'utf8'));
+  var newRss = [];
+  for(var item in rss){
+    var x = {};
+    x.name = item.name;
+    x.description = htmlToText(item.description,{});
+    newRss.push(x);
+  }
+  var template = fs.readFileSync('templates/callScript.txt','utf8');
+  return mustache.render(template,{rss:newRss});
+}
+exports.genScript2 = genScript2;

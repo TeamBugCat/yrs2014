@@ -11,7 +11,7 @@ module.exports={
 	},
 	alJazeera:{
 		index:"http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989",
-		namePretty: "Al Jazeera"
+		namePretty: "Al Jazeera",
 		logo:""
 	}
 }

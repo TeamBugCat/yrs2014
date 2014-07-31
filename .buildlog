@@ -1164,3 +1164,95 @@ build.dart --machine --changed=web/index.html
 
 build.dart finished [8483 ms]
 
+---
+build.dart --machine --changed=app.js --changed=bbcNews --changed=build/web/api_interface.dart --changed=build/...
+
+build.dart finished [7751 ms]
+
+---
+build.dart --machine --changed=web/index.html
+[{"method":"warning","params":{"file":"web/index.html","message":"To run a polymer application, you need to call \"initPolymer\". You can either include a generic script tag that does this for you:'<script type=\"application/dart\">export \"package:polymer/init.dart\";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.","line":21,"charStart":737,"charEnd":754}}]
+build.dart finished [4917 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+[{"method":"warning","params":{"file":"web/index.html","message":"To run a polymer application, you need to call \"initPolymer\". You can either include a generic script tag that does this for you:'<script type=\"application/dart\">export \"package:polymer/init.dart\";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.","line":21,"charStart":737,"charEnd":754}}]
+build.dart finished [4696 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+[{"method":"warning","params":{"file":"web/index.html","message":"To run a polymer application, you need to call \"initPolymer\". You can either include a generic script tag that does this for you:'<script type=\"application/dart\">export \"package:polymer/init.dart\";</script>' or add your own script tag and call that function. Make sure the script tag is placed after all HTML imports.","line":21,"charStart":737,"charEnd":754}}]
+build.dart finished [3912 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4005 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [3988 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [3922 ms]
+
+---
+build.dart --machine --changed=app.js
+
+build.dart finished [3928 ms]
+
+---
+build.dart --machine --changed=web/base.css
+
+build.dart finished [3945 ms]
+
+---
+build.dart --machine --removed=install-build-deps.sh
+
+build.dart finished [3869 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5276 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4052 ms]
+
+---
+build.dart --machine --removed=web/base.css
+
+build.dart finished [3882 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [3932 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [3931 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [3929 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5348 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [3873 ms]
+
+---
+build.dart --machine --changed=pages/index.html --changed=pages/index1.html --changed=pages/stylesheet1.0.css

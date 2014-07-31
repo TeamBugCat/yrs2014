@@ -50,8 +50,8 @@ app.all('/api/sources', function (req, res, next) {
 
 app.use('/pages/',express.static(__dirname + "/pages"));
 app.use('/feeds/',express.static(__dirname + "/feeds"));
-app.use(express.static(__dirname + "/build/web"));
 app.use(harp.mount(__dirname + "/build/web"));
+app.use(express.static(__dirname + "/build/web"));
 
 // Launch
 http.createServer(app).listen(app.get('port'), function(){

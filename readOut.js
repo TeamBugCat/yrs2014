@@ -95,7 +95,7 @@ function genScript2(id){
 function genScriptNoCache(rss) {
   var newRss = [];
 
-  for (var i = 0; i < rss.length; i++) {
+  for (var i = 0; i < Math.min(rss.length, 15); i++) {
     var item = rss[i];
     var x = {};
     x.title = item.title;

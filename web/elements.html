@@ -1,6 +1,7 @@
 <link rel="import" href="../packages/polymer/polymer.html">
 <link rel="import" href="packages/core_elements/core_item.html">
 <link rel="import" href="packages/paper_elements/paper_checkbox.html">
+<link rel="import" href="packages/core_elements/core_tooltip.html">
 
 <polymer-element name="source-selection" attributes="news checked">
   <template>
@@ -9,14 +10,20 @@
         box-shadow: 0 0 0.5em 0 rgba(0,0,0,0.4);
         padding-left: 1em; padding-right: 1em;
       }
+
+      core-tooltip.fullsize {
+        display: inline;
+        width: 100%;
+        height: 100%;
+      }
     </style>
 
     <core-item class="shady">
       <content></content>
-      <div flex>{{sourceName}}</div>
+      <div flex><core-tooltip large label="{{sourceUrl}}">{{sourceName}}</core-tooltip></div>
       <paper-checkbox checked?="{{checked}}"></paper-checkbox>
     </core-item>
   </template>
-  
+
   <script type="application/dart" src="elements.dart"></script>
 </polymer-element>

@@ -4052,15 +4052,15 @@ var $$ = {};
   "^": "",
   main: [function() {
     var t1, t2, t3, t4, t5;
-    t1 = P.LinkedHashMap_LinkedHashMap$_literal([C.Symbol_checkboxAnimationEnd, new E.main_closure(), C.Symbol_checked, new E.main_closure0(), C.Symbol_icon, new E.main_closure1(), C.Symbol_label, new E.main_closure2(), C.Symbol_news, new E.main_closure3(), C.Symbol_sourceName, new E.main_closure4(), C.Symbol_src, new E.main_closure5(), C.Symbol_tokenList, new E.main_closure6()], null, null);
-    t2 = P.LinkedHashMap_LinkedHashMap$_literal([C.Symbol_checked, new E.main_closure7(), C.Symbol_icon, new E.main_closure8(), C.Symbol_news, new E.main_closure9(), C.Symbol_sourceName, new E.main_closure10(), C.Symbol_src, new E.main_closure11()], null, null);
+    t1 = P.LinkedHashMap_LinkedHashMap$_literal([C.Symbol_checkboxAnimationEnd, new E.main_closure(), C.Symbol_checked, new E.main_closure0(), C.Symbol_icon, new E.main_closure1(), C.Symbol_label, new E.main_closure2(), C.Symbol_news, new E.main_closure3(), C.Symbol_noarrow, new E.main_closure4(), C.Symbol_position, new E.main_closure5(), C.Symbol_show, new E.main_closure6(), C.Symbol_sourceName, new E.main_closure7(), C.Symbol_sourceUrl, new E.main_closure8(), C.Symbol_src, new E.main_closure9(), C.Symbol_tokenList, new E.main_closure10()], null, null);
+    t2 = P.LinkedHashMap_LinkedHashMap$_literal([C.Symbol_checked, new E.main_closure11(), C.Symbol_icon, new E.main_closure12(), C.Symbol_news, new E.main_closure13(), C.Symbol_sourceUrl, new E.main_closure14(), C.Symbol_src, new E.main_closure15()], null, null);
     t3 = P.LinkedHashMap_LinkedHashMap$_literal([C.Type_ePO, C.Type_GNh, C.Type_GNh, C.Type_I2I], null, null);
-    t4 = P.LinkedHashMap_LinkedHashMap$_literal([C.Type_ePO, P.LinkedHashMap_LinkedHashMap$_literal([C.Symbol_checked, C.Declaration_siO, C.Symbol_news, C.Declaration_s6o, C.Symbol_sourceName, C.Declaration_61T], null, null)], null, null);
-    t5 = O.GeneratedSymbolConverterService$(new O.StaticConfiguration(t1, t2, t3, t4, C.Map_empty, P.LinkedHashMap_LinkedHashMap$_literal([C.Symbol_checkboxAnimationEnd, "checkboxAnimationEnd", C.Symbol_checked, "checked", C.Symbol_icon, "icon", C.Symbol_label, "label", C.Symbol_news, "news", C.Symbol_sourceName, "sourceName", C.Symbol_src, "src", C.Symbol_tokenList, "tokenList"], null, null), false));
+    t4 = P.LinkedHashMap_LinkedHashMap$_literal([C.Type_ePO, P.LinkedHashMap_LinkedHashMap$_literal([C.Symbol_checked, C.Declaration_siO, C.Symbol_news, C.Declaration_s6o, C.Symbol_sourceName, C.Declaration_CWj, C.Symbol_sourceUrl, C.Declaration_2Vk], null, null)], null, null);
+    t5 = O.GeneratedSymbolConverterService$(new O.StaticConfiguration(t1, t2, t3, t4, C.Map_empty, P.LinkedHashMap_LinkedHashMap$_literal([C.Symbol_checkboxAnimationEnd, "checkboxAnimationEnd", C.Symbol_checked, "checked", C.Symbol_icon, "icon", C.Symbol_label, "label", C.Symbol_news, "news", C.Symbol_noarrow, "noarrow", C.Symbol_position, "position", C.Symbol_show, "show", C.Symbol_sourceName, "sourceName", C.Symbol_sourceUrl, "sourceUrl", C.Symbol_src, "src", C.Symbol_tokenList, "tokenList"], null, null), false));
     $.objectAccessor = new O.GeneratedObjectAccessorService(t1, t2, C.Map_empty);
     $.typeInspector = new O.GeneratedTypeInspectorService(t3, t4, false);
     $.symbolConverter = t5;
-    $.initializers = [S.upgradeCoreMeta$closure(), M.upgradeCoreIconset$closure(), L.upgradeCoreIcon$closure(), K.upgradeCoreItem$closure(), F.upgradePaperRipple$closure(), V.upgradePaperRadioButton$closure(), R.upgradePaperCheckbox$closure(), new E.main_closure12()];
+    $.initializers = [S.upgradeCoreMeta$closure(), M.upgradeCoreIconset$closure(), L.upgradeCoreIcon$closure(), K.upgradeCoreItem$closure(), F.upgradePaperRipple$closure(), V.upgradePaperRadioButton$closure(), R.upgradePaperCheckbox$closure(), G.upgradeCoreTooltip$closure(), new E.main_closure16()];
     $.deployMode = true;
     H.throwNoSuchMethod("", "main", [], null);
   }, "call$0", "main$closure", 0, 0, 13],
@@ -4102,60 +4102,88 @@ var $$ = {};
   main_closure4: {
     "^": "Closure:33;",
     call$1: function(o) {
-      return J.get$sourceName$x(o);
+      return J.get$noarrow$x(o);
     },
     $isFunction: true
   },
   main_closure5: {
     "^": "Closure:33;",
     call$1: function(o) {
-      return J.get$src$x(o);
+      return J.get$position$x(o);
     },
     $isFunction: true
   },
   main_closure6: {
     "^": "Closure:33;",
     call$1: function(o) {
-      return o.get$tokenList();
+      return J.get$show$x(o);
     },
     $isFunction: true
   },
   main_closure7: {
-    "^": "Closure:46;",
-    call$2: function(o, v) {
-      J.set$checked$x(o, v);
+    "^": "Closure:33;",
+    call$1: function(o) {
+      return J.get$sourceName$x(o);
     },
     $isFunction: true
   },
   main_closure8: {
-    "^": "Closure:46;",
-    call$2: function(o, v) {
-      J.set$icon$x(o, v);
+    "^": "Closure:33;",
+    call$1: function(o) {
+      return J.get$sourceUrl$x(o);
     },
     $isFunction: true
   },
   main_closure9: {
-    "^": "Closure:46;",
-    call$2: function(o, v) {
-      J.set$news$x(o, v);
+    "^": "Closure:33;",
+    call$1: function(o) {
+      return J.get$src$x(o);
     },
     $isFunction: true
   },
   main_closure10: {
-    "^": "Closure:46;",
-    call$2: function(o, v) {
-      J.set$sourceName$x(o, v);
+    "^": "Closure:33;",
+    call$1: function(o) {
+      return o.get$tokenList();
     },
     $isFunction: true
   },
   main_closure11: {
     "^": "Closure:46;",
     call$2: function(o, v) {
-      J.set$src$x(o, v);
+      J.set$checked$x(o, v);
     },
     $isFunction: true
   },
   main_closure12: {
+    "^": "Closure:46;",
+    call$2: function(o, v) {
+      J.set$icon$x(o, v);
+    },
+    $isFunction: true
+  },
+  main_closure13: {
+    "^": "Closure:46;",
+    call$2: function(o, v) {
+      J.set$news$x(o, v);
+    },
+    $isFunction: true
+  },
+  main_closure14: {
+    "^": "Closure:46;",
+    call$2: function(o, v) {
+      J.set$sourceUrl$x(o, v);
+    },
+    $isFunction: true
+  },
+  main_closure15: {
+    "^": "Closure:46;",
+    call$2: function(o, v) {
+      J.set$src$x(o, v);
+    },
+    $isFunction: true
+  },
+  main_closure16: {
     "^": "Closure:14;",
     call$0: function() {
       var t1, t2, t3;
@@ -4277,6 +4305,35 @@ var $$ = {};
     "^": "HtmlElement+DomProxyMixin;"
   }
 }],
+["core_elements.core_tooltip", "package:core_elements/core_tooltip.dart", , G, {
+  "^": "",
+  upgradeCoreTooltip: [function() {
+    return N.registerDartType("core-tooltip", C.Type_sMI, null);
+  }, "call$0", "upgradeCoreTooltip$closure", 0, 0, 14],
+  CoreTooltip: {
+    "^": "HtmlElement_DomProxyMixin2;common$DomProxyMixin$_proxy",
+    get$noarrow: function(receiver) {
+      return J.$index$asx(this.get$jsElement(receiver), "noarrow");
+    },
+    get$position: function(receiver) {
+      return J.$index$asx(this.get$jsElement(receiver), "position");
+    },
+    get$label: function(receiver) {
+      return J.$index$asx(this.get$jsElement(receiver), "label");
+    },
+    get$show: function(receiver) {
+      return J.$index$asx(this.get$jsElement(receiver), "show");
+    },
+    static: {CoreTooltip$created: function(receiver) {
+        receiver.toString;
+        C.CoreTooltip_methods.Element$created$0(receiver);
+        return receiver;
+      }}
+  },
+  HtmlElement_DomProxyMixin2: {
+    "^": "HtmlElement+DomProxyMixin;"
+  }
+}],
 ["core_elements.paper_checkbox", "package:paper_elements/paper_checkbox.dart", , R, {
   "^": "",
   upgradePaperCheckbox: [function() {
@@ -4297,7 +4354,7 @@ var $$ = {};
     return N.registerDartType("paper-radio-button", C.Type_b9q, null);
   }, "call$0", "upgradePaperRadioButton$closure", 0, 0, 14],
   PaperRadioButton: {
-    "^": "HtmlElement_DomProxyMixin2;common$DomProxyMixin$_proxy",
+    "^": "HtmlElement_DomProxyMixin3;common$DomProxyMixin$_proxy",
     get$checked: function(receiver) {
       return J.$index$asx(this.get$jsElement(receiver), "checked");
     },
@@ -4313,7 +4370,7 @@ var $$ = {};
         return receiver;
       }}
   },
-  HtmlElement_DomProxyMixin2: {
+  HtmlElement_DomProxyMixin3: {
     "^": "HtmlElement+DomProxyMixin;"
   }
 }],
@@ -4323,14 +4380,14 @@ var $$ = {};
     return N.registerDartType("paper-ripple", C.Type_AyE, null);
   }, "call$0", "upgradePaperRipple$closure", 0, 0, 14],
   PaperRipple: {
-    "^": "HtmlElement_DomProxyMixin3;common$DomProxyMixin$_proxy",
+    "^": "HtmlElement_DomProxyMixin4;common$DomProxyMixin$_proxy",
     static: {PaperRipple$created: function(receiver) {
         receiver.toString;
         C.PaperRipple_methods.Element$created$0(receiver);
         return receiver;
       }}
   },
-  HtmlElement_DomProxyMixin3: {
+  HtmlElement_DomProxyMixin4: {
     "^": "HtmlElement+DomProxyMixin;"
   }
 }],
@@ -4980,7 +5037,22 @@ var $$ = {};
     },
     $isSymbol0: true,
     $isSymbol: true,
-    static: {"^": "Symbol_reservedWordRE,Symbol_publicIdentifierRE,Symbol_identifierRE,Symbol_operatorRE,Symbol_publicSymbolPattern,Symbol_symbolPattern"}
+    static: {"^": "Symbol_reservedWordRE,Symbol_publicIdentifierRE,Symbol_identifierRE,Symbol_operatorRE,Symbol_publicSymbolPattern,Symbol_symbolPattern", Symbol_validatePublicSymbol: function($name) {
+        var t1, t2;
+        t1 = J.getInterceptor$asx($name);
+        if (t1.get$isEmpty($name) !== true) {
+          t2 = $.get$Symbol_publicSymbolPattern()._nativeRegExp;
+          if (typeof $name !== "string")
+            H.throwExpression(P.ArgumentError$($name));
+          t2 = t2.test($name);
+        } else
+          t2 = true;
+        if (t2)
+          return $name;
+        if (t1.startsWith$1($name, "_"))
+          throw H.wrapException(P.ArgumentError$("\"" + H.S($name) + "\" is a private identifier"));
+        throw H.wrapException(P.ArgumentError$("\"" + H.S($name) + "\" is not a valid (qualified) symbol name"));
+      }}
   }
 }],
 ["dart._js_names", "dart:_js_names", , H, {
@@ -8759,7 +8831,7 @@ var $$ = {};
     },
     addAll$1: function(_, elements) {
       var t1;
-      for (t1 = H.setRuntimeTypeInfo(new H.ListIterator(elements, 2, 0, null), [H.getTypeArgumentByIndex(elements, 0)]); t1.moveNext$0();)
+      for (t1 = H.setRuntimeTypeInfo(new H.ListIterator(elements, elements.length, 0, null), [H.getTypeArgumentByIndex(elements, 0)]); t1.moveNext$0();)
         this.add$1(0, t1._current);
     },
     toList$1$growable: function(_, growable) {
@@ -9917,7 +9989,7 @@ var $$ = {};
   },
   HtmlElement: {
     "^": "Element;",
-    "%": "HTMLAppletElement|HTMLBRElement|HTMLCanvasElement|HTMLContentElement|HTMLDListElement|HTMLDataListElement|HTMLDirectoryElement|HTMLDivElement|HTMLFontElement|HTMLFrameElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLMarqueeElement|HTMLMenuElement|HTMLModElement|HTMLParagraphElement|HTMLPreElement|HTMLQuoteElement|HTMLShadowElement|HTMLSpanElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTitleElement|HTMLUListElement|HTMLUnknownElement;HTMLElement;HtmlElement_DomProxyMixin|CoreIcon|HtmlElement_DomProxyMixin0|CoreMeta|CoreIconset|HtmlElement_DomProxyMixin1|CoreItem|HtmlElement_DomProxyMixin2|PaperRadioButton|PaperCheckbox|HtmlElement_DomProxyMixin3|PaperRipple|HtmlElement_Polymer|HtmlElement_Polymer_ChangeNotifier|PolymerElement|PolymerElement_ChangeNotifier|SourceSelectionElement"
+    "%": "HTMLAppletElement|HTMLBRElement|HTMLCanvasElement|HTMLContentElement|HTMLDListElement|HTMLDataListElement|HTMLDirectoryElement|HTMLDivElement|HTMLFontElement|HTMLFrameElement|HTMLHRElement|HTMLHeadElement|HTMLHeadingElement|HTMLHtmlElement|HTMLMarqueeElement|HTMLMenuElement|HTMLModElement|HTMLParagraphElement|HTMLPreElement|HTMLQuoteElement|HTMLShadowElement|HTMLSpanElement|HTMLTableCaptionElement|HTMLTableCellElement|HTMLTableColElement|HTMLTableDataCellElement|HTMLTableElement|HTMLTableHeaderCellElement|HTMLTableRowElement|HTMLTableSectionElement|HTMLTitleElement|HTMLUListElement|HTMLUnknownElement;HTMLElement;HtmlElement_DomProxyMixin|CoreIcon|HtmlElement_DomProxyMixin0|CoreMeta|CoreIconset|HtmlElement_DomProxyMixin1|CoreItem|HtmlElement_DomProxyMixin2|CoreTooltip|HtmlElement_DomProxyMixin3|PaperRadioButton|PaperCheckbox|HtmlElement_DomProxyMixin4|PaperRipple|HtmlElement_Polymer|HtmlElement_Polymer_ChangeNotifier|PolymerElement|PolymerElement_ChangeNotifier|SourceSelectionElement"
   },
   _EntryArray: {
     "^": "Interceptor;",
@@ -9994,6 +10066,9 @@ var $$ = {};
     open$1: function($receiver, arg0) {
       return $receiver.open.call$1(arg0);
     },
+    show$0: [function(receiver) {
+      return receiver.show();
+    }, "call$0", "get$show", 0, 0, 13],
     "%": "HTMLDialogElement"
   },
   Document: {
@@ -10388,7 +10463,7 @@ var $$ = {};
     "%": "ProcessingInstruction"
   },
   ProgressElement: {
-    "^": "HtmlElement;value%",
+    "^": "HtmlElement;position=,value%",
     "%": "HTMLProgressElement"
   },
   ProgressEvent: {
@@ -11808,7 +11883,7 @@ var $$ = {};
 ["", "elements.dart", , A, {
   "^": "",
   SourceSelectionElement: {
-    "^": "PolymerElement_ChangeNotifier;_elements$__$news,_elements$__$checked,_elements$__$sourceName,change_notifier$ChangeNotifier$_changes,change_notifier$ChangeNotifier$_change_notifier$_records,change_notifier$ChangeNotifier$_changes,change_notifier$ChangeNotifier$_change_notifier$_records,polymer$Polymer$_polymer$_element,polymer$Polymer$_namedObservers,polymer$Polymer$_observers,polymer$Polymer$_unbound,polymer$Polymer$_unbindAllJob,polymer$Polymer$_propertyObserver,polymer$Polymer$_readied,polymer$Polymer$_jsElem,polymer$Polymer$_hasBeenAttached,polymer$Polymer$shadowRoots,polymer$Polymer$$",
+    "^": "PolymerElement_ChangeNotifier;_elements$__$news,_elements$__$checked,_objCache,change_notifier$ChangeNotifier$_changes,change_notifier$ChangeNotifier$_change_notifier$_records,change_notifier$ChangeNotifier$_changes,change_notifier$ChangeNotifier$_change_notifier$_records,polymer$Polymer$_polymer$_element,polymer$Polymer$_namedObservers,polymer$Polymer$_observers,polymer$Polymer$_unbound,polymer$Polymer$_unbindAllJob,polymer$Polymer$_propertyObserver,polymer$Polymer$_readied,polymer$Polymer$_jsElem,polymer$Polymer$_hasBeenAttached,polymer$Polymer$shadowRoots,polymer$Polymer$$",
     get$news: function(receiver) {
       return receiver._elements$__$news;
     },
@@ -11822,10 +11897,18 @@ var $$ = {};
       receiver._elements$__$checked = this.notifyPropertyChange$3(receiver, C.Symbol_checked, receiver._elements$__$checked, value);
     },
     get$sourceName: function(receiver) {
-      return receiver._elements$__$sourceName;
+      var t1 = receiver._objCache;
+      if (t1 != null)
+        return J.$index$asx(t1, "namePretty");
+      else
+        return "Loading...";
     },
-    set$sourceName: function(receiver, value) {
-      receiver._elements$__$sourceName = this.notifyPropertyChange$3(receiver, C.Symbol_sourceName, receiver._elements$__$sourceName, value);
+    get$sourceUrl: function(receiver) {
+      var t1 = receiver._objCache;
+      if (t1 != null)
+        return J.$index$asx(t1, "index");
+      else
+        return "Loading...";
     },
     SourceSelectionElement$created$0: function(receiver) {
       E.sources().then$1(new A.SourceSelectionElement$created_closure(receiver));
@@ -11837,7 +11920,7 @@ var $$ = {};
         t2 = H.setRuntimeTypeInfo(new V.ObservableMap(P.HashMap_HashMap(null, null, null, t2, null), null, null), [t2, null]);
         receiver._elements$__$news = "bbcNews";
         receiver._elements$__$checked = false;
-        receiver._elements$__$sourceName = "Loading...";
+        receiver._objCache = null;
         receiver.polymer$Polymer$_observers = [];
         receiver.polymer$Polymer$_readied = false;
         receiver.polymer$Polymer$_hasBeenAttached = false;
@@ -11858,8 +11941,10 @@ var $$ = {};
     call$1: [function(value) {
       var t1, t2;
       t1 = this.this_0;
-      t2 = J.$index$asx(value, t1._elements$__$news);
-      t1._elements$__$sourceName = J.notifyPropertyChange$3$x(t1, C.Symbol_sourceName, t1._elements$__$sourceName, t2);
+      t1._objCache = J.$index$asx(value, t1._elements$__$news);
+      t2 = J.getInterceptor$x(t1);
+      t2.notifyPropertyChange$3(t1, new H.Symbol0(H.Symbol_validatePublicSymbol("sourceName")), "Loading...", t2.get$sourceName(t1));
+      t2.notifyPropertyChange$3(t1, new H.Symbol0(H.Symbol_validatePublicSymbol("sourceUrl")), "Loading...", t2.get$sourceUrl(t1));
     }, "call$1", null, 2, 0, null, 17, "call"],
     $isFunction: true
   }
@@ -16523,7 +16608,7 @@ var $$ = {};
   },
   matchesAnnotation: function(metadata, queryAnnotations) {
     var t1, meta, t2, t3, queryMeta, t4;
-    t1 = new H.ListIterator(metadata, 2, 0, null);
+    t1 = new H.ListIterator(metadata, metadata.length, 0, null);
     t1.$builtinTypeInfo = [H.getTypeArgumentByIndex(metadata, 0)];
     for (; t1.moveNext$0();) {
       meta = t1._current;
@@ -16580,17 +16665,25 @@ var $$ = {};
     return -1;
   },
   compareLists: function(a, b, unordered) {
-    var bSet, i;
+    var t1, t2, bSet, i, t3;
+    t1 = a.length;
+    t2 = b.length;
+    if (t1 !== t2)
+      return false;
     if (unordered) {
       bSet = P.LinkedHashSet_LinkedHashSet(null, null, null, null);
       bSet.addAll$1(0, b);
-      for (i = 0; i < 2; ++i)
+      for (i = 0; i < a.length; ++i)
         if (!bSet.contains$1(0, a[i]))
           return false;
     } else
-      for (i = 0; i < 2; ++i)
-        if (a[i] !== b[i])
+      for (i = 0; i < t1; ++i) {
+        t3 = a[i];
+        if (i >= t2)
+          return H.ioore(b, i);
+        if (t3 !== b[i])
           return false;
+      }
     return true;
   }
 }],
@@ -18348,11 +18441,11 @@ W.ShadowRoot.$isNode = true;
 W.ShadowRoot.$isObject = true;
 W.HttpRequest.$isObject = true;
 W.ProgressEvent.$isObject = true;
+P.bool.$isbool = true;
+P.bool.$isObject = true;
 G.ListChangeRecord.$isListChangeRecord = true;
 G.ListChangeRecord.$isObject = true;
 N.Logger.$isObject = true;
-P.bool.$isbool = true;
-P.bool.$isObject = true;
 L.PropertyPath.$isObject = true;
 F.Observable.$isObject = true;
 W.Event.$isObject = true;
@@ -18707,6 +18800,9 @@ J.get$news$x = function(receiver) {
 J.get$nextNode$x = function(receiver) {
   return J.getInterceptor$x(receiver).get$nextNode(receiver);
 };
+J.get$noarrow$x = function(receiver) {
+  return J.getInterceptor$x(receiver).get$noarrow(receiver);
+};
 J.get$on$x = function(receiver) {
   return J.getInterceptor$x(receiver).get$on(receiver);
 };
@@ -18719,6 +18815,9 @@ J.get$parent$x = function(receiver) {
 J.get$parentNode$x = function(receiver) {
   return J.getInterceptor$x(receiver).get$parentNode(receiver);
 };
+J.get$position$x = function(receiver) {
+  return J.getInterceptor$x(receiver).get$position(receiver);
+};
 J.get$responseText$x = function(receiver) {
   return J.getInterceptor$x(receiver).get$responseText(receiver);
 };
@@ -18728,8 +18827,14 @@ J.get$runtimeType$ = function(receiver) {
 J.get$selectedIndex$x = function(receiver) {
   return J.getInterceptor$x(receiver).get$selectedIndex(receiver);
 };
+J.get$show$x = function(receiver) {
+  return J.getInterceptor$x(receiver).get$show(receiver);
+};
 J.get$sourceName$x = function(receiver) {
   return J.getInterceptor$x(receiver).get$sourceName(receiver);
+};
+J.get$sourceUrl$x = function(receiver) {
+  return J.getInterceptor$x(receiver).get$sourceUrl(receiver);
 };
 J.get$src$x = function(receiver) {
   return J.getInterceptor$x(receiver).get$src(receiver);
@@ -18757,9 +18862,6 @@ J.map$1$ax = function(receiver, a0) {
 };
 J.noSuchMethod$1 = function(receiver, a0) {
   return J.getInterceptor(receiver).noSuchMethod$1(receiver, a0);
-};
-J.notifyPropertyChange$3$x = function(receiver, a0, a1, a2) {
-  return J.getInterceptor$x(receiver).notifyPropertyChange$3(receiver, a0, a1, a2);
 };
 J.observe$3$attributeFilter$attributes$x = function(receiver, a0, a1, a2) {
   return J.getInterceptor$x(receiver).observe$3$attributeFilter$attributes(receiver, a0, a1, a2);
@@ -18806,8 +18908,8 @@ J.set$news$x = function(receiver, value) {
 J.set$selectedIndex$x = function(receiver, value) {
   return J.getInterceptor$x(receiver).set$selectedIndex(receiver, value);
 };
-J.set$sourceName$x = function(receiver, value) {
-  return J.getInterceptor$x(receiver).set$sourceName(receiver, value);
+J.set$sourceUrl$x = function(receiver, value) {
+  return J.getInterceptor$x(receiver).set$sourceUrl(receiver, value);
 };
 J.set$src$x = function(receiver, value) {
   return J.getInterceptor$x(receiver).set$src(receiver, value);
@@ -18841,6 +18943,7 @@ C.CoreIcon_methods = L.CoreIcon.prototype;
 C.CoreIconset_methods = M.CoreIconset.prototype;
 C.CoreItem_methods = K.CoreItem.prototype;
 C.CoreMeta_methods = S.CoreMeta.prototype;
+C.CoreTooltip_methods = G.CoreTooltip.prototype;
 C.HttpRequest_methods = W.HttpRequest.prototype;
 C.JSArray_methods = J.JSArray.prototype;
 C.JSInt_methods = J.JSInt.prototype;
@@ -18866,9 +18969,8 @@ C.C__RootZone = new P._RootZone();
 C.DeclarationKind_0 = new A.DeclarationKind(0);
 C.DeclarationKind_1 = new A.DeclarationKind(1);
 C.DeclarationKind_2 = new A.DeclarationKind(2);
-C.Symbol_sourceName = new H.Symbol0("sourceName");
+C.Symbol_sourceUrl = new H.Symbol0("sourceUrl");
 C.Type_Ejg = H.createRuntimeType('String');
-C.C_Reflectable = new K.Reflectable();
 C.C_ObservableProperty = new K.ObservableProperty();
 Isolate.makeConstantList = function(list) {
   list.immutable$list = init;
@@ -18876,9 +18978,12 @@ Isolate.makeConstantList = function(list) {
   return list;
 };
 ;
-C.List_Reflectable_ObservableProperty = Isolate.makeConstantList([C.C_Reflectable, C.C_ObservableProperty]);
-C.Declaration_61T = new A.Declaration(C.Symbol_sourceName, C.DeclarationKind_1, false, C.Type_Ejg, false, C.List_Reflectable_ObservableProperty);
+C.List_ObservableProperty = Isolate.makeConstantList([C.C_ObservableProperty]);
+C.Declaration_2Vk = new A.Declaration(C.Symbol_sourceUrl, C.DeclarationKind_1, true, C.Type_Ejg, false, C.List_ObservableProperty);
+C.Symbol_sourceName = new H.Symbol0("sourceName");
+C.Declaration_CWj = new A.Declaration(C.Symbol_sourceName, C.DeclarationKind_1, true, C.Type_Ejg, false, C.List_ObservableProperty);
 C.Symbol_news = new H.Symbol0("news");
+C.C_Reflectable = new K.Reflectable();
 C.PublishedProperty_false = new A.PublishedProperty(false);
 C.List_bTJ = Isolate.makeConstantList([C.C_Reflectable, C.PublishedProperty_false]);
 C.Declaration_s6o = new A.Declaration(C.Symbol_news, C.DeclarationKind_1, false, C.Type_Ejg, false, C.List_bTJ);
@@ -19054,6 +19159,9 @@ C.Symbol_checkboxAnimationEnd = new H.Symbol0("checkboxAnimationEnd");
 C.Symbol_icon = new H.Symbol0("icon");
 C.Symbol_label = new H.Symbol0("label");
 C.Symbol_noSuchMethod = new H.Symbol0("noSuchMethod");
+C.Symbol_noarrow = new H.Symbol0("noarrow");
+C.Symbol_position = new H.Symbol0("position");
+C.Symbol_show = new H.Symbol0("show");
 C.Symbol_src = new H.Symbol0("src");
 C.Symbol_tokenList = new H.Symbol0("tokenList");
 C.Symbol_value = new H.Symbol0("value");
@@ -19088,6 +19196,7 @@ C.Type_mp3 = H.createRuntimeType('Int8List');
 C.Type_oGP = H.createRuntimeType('ByteData');
 C.Type_qq1 = H.createRuntimeType('$double');
 C.Type_s8b = H.createRuntimeType('AutoBindingElement');
+C.Type_sMI = H.createRuntimeType('CoreTooltip');
 C.Type_wAg = H.createRuntimeType('ByteBuffer');
 C.Type_wOW = H.createRuntimeType('NativeTypedArrayOfInt');
 C.Type_xM7 = H.createRuntimeType('num');
@@ -19125,7 +19234,7 @@ $.deployMode = true;
 $.TemplateBindExtension__initStyles = null;
 $.TemplateBindExtension__initBaseUriWorkaround = null;
 $.enableBindingsReflection = false;
-$.mapTypeToInterceptor = [C.Type_ACQ, M.CoreIconset, {created: M.CoreIconset$created}, C.Type_AHF, H.NativeTypedArray, {"": H.NativeTypedArray$}, C.Type_AyE, F.PaperRipple, {created: F.PaperRipple$created}, C.Type_EQs, W.GlobalEventHandlers, {}, C.Type_I2I, A.PolymerElement, {created: A.PolymerElement$created}, C.Type_IQT, R.PaperCheckbox, {created: R.PaperCheckbox$created}, C.Type_NlB, H.NativeTypedArrayOfDouble, {"": H.NativeTypedArrayOfDouble$}, C.Type_Qic, K.CoreItem, {created: K.CoreItem$created}, C.Type_QyU, W.WindowEventHandlers, {}, C.Type_aB0, S.CoreMeta, {created: S.CoreMeta$created}, C.Type_b9q, V.PaperRadioButton, {created: V.PaperRadioButton$created}, C.Type_ePO, A.SourceSelectionElement, {created: A.SourceSelectionElement$created}, C.Type_fPs, W.HtmlElement, {}, C.Type_jWj, L.CoreIcon, {created: L.CoreIcon$created}, C.Type_s8b, Y.AutoBindingElement, {created: Y.AutoBindingElement$created}, C.Type_wOW, H.NativeTypedArrayOfInt, {"": H.NativeTypedArrayOfInt$}];
+$.mapTypeToInterceptor = [C.Type_ACQ, M.CoreIconset, {created: M.CoreIconset$created}, C.Type_AHF, H.NativeTypedArray, {"": H.NativeTypedArray$}, C.Type_AyE, F.PaperRipple, {created: F.PaperRipple$created}, C.Type_EQs, W.GlobalEventHandlers, {}, C.Type_I2I, A.PolymerElement, {created: A.PolymerElement$created}, C.Type_IQT, R.PaperCheckbox, {created: R.PaperCheckbox$created}, C.Type_NlB, H.NativeTypedArrayOfDouble, {"": H.NativeTypedArrayOfDouble$}, C.Type_Qic, K.CoreItem, {created: K.CoreItem$created}, C.Type_QyU, W.WindowEventHandlers, {}, C.Type_aB0, S.CoreMeta, {created: S.CoreMeta$created}, C.Type_b9q, V.PaperRadioButton, {created: V.PaperRadioButton$created}, C.Type_ePO, A.SourceSelectionElement, {created: A.SourceSelectionElement$created}, C.Type_fPs, W.HtmlElement, {}, C.Type_jWj, L.CoreIcon, {created: L.CoreIcon$created}, C.Type_s8b, Y.AutoBindingElement, {created: Y.AutoBindingElement$created}, C.Type_sMI, G.CoreTooltip, {created: G.CoreTooltip$created}, C.Type_wOW, H.NativeTypedArrayOfInt, {"": H.NativeTypedArrayOfInt$}];
 Isolate.$lazy($, "globalThis", "globalThis", "get$globalThis", function() {
   return function() {
     return this;
@@ -19209,6 +19318,9 @@ Isolate.$lazy($, "undefinedLiteralPropertyPattern", "TypeErrorDecoder_undefinedL
     }
 
   }());
+});
+Isolate.$lazy($, "publicSymbolPattern", "Symbol_publicSymbolPattern", "get$Symbol_publicSymbolPattern", function() {
+  return new H.JSSyntaxRegExp("^(?:(?:[\\-+*/%&|^]|\\[\\]=?|==|~/?|<[<=]?|>[>=]?|unary-)$|(?!(?:assert|break|c(?:a(?:se|tch)|lass|on(?:st|tinue))|d(?:efault|o)|e(?:lse|num|xtends)|f(?:alse|inal(?:ly)?|or)|i[fns]|n(?:ew|ull)|ret(?:hrow|urn)|s(?:uper|witch)|t(?:h(?:is|row)|r(?:ue|y))|v(?:ar|oid)|w(?:hile|ith))\\b(?!\\$))[a-zA-Z$][\\w$]*(?:=?$|[.](?!$)))+?$", H.JSSyntaxRegExp_makeNative("^(?:(?:[\\-+*/%&|^]|\\[\\]=?|==|~/?|<[<=]?|>[>=]?|unary-)$|(?!(?:assert|break|c(?:a(?:se|tch)|lass|on(?:st|tinue))|d(?:efault|o)|e(?:lse|num|xtends)|f(?:alse|inal(?:ly)?|or)|i[fns]|n(?:ew|ull)|ret(?:hrow|urn)|s(?:uper|witch)|t(?:h(?:is|row)|r(?:ue|y))|v(?:ar|oid)|w(?:hile|ith))\\b(?!\\$))[a-zA-Z$][\\w$]*(?:=?$|[.](?!$)))+?$", false, true, false), null, null);
 });
 Isolate.$lazy($, "scheduleImmediateClosure", "_AsyncRun_scheduleImmediateClosure", "get$_AsyncRun_scheduleImmediateClosure", function() {
   return P._AsyncRun__initializeScheduleImmediate();

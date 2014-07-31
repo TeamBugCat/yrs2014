@@ -11,7 +11,8 @@ $debug: false;
 @import "neat/neat";
 
 $mobile: new-breakpoint(max-width 480px);
-$desktop: new-breakpoint(min-width 480px);
+$desktop: new-breakpoint(min-width 800px);
+$tablet: new-breakpoint(min-width 480px max-width 800px);
 
 body {
   background-color: #F8F8F8;
@@ -78,6 +79,20 @@ div.rounded-shadow {
   }
 
   .select {
-    @include span-columns(3);
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+
+    @include media($desktop) {
+      @include span-columns(3)
+    }
+
+    @include media($tablet) {
+      @include span-columns(6);
+    }
+
   }
 }

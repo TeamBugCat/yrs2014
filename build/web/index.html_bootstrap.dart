@@ -21,8 +21,9 @@ import 'package:paper_elements/paper_item.dart' as i15;
 import 'package:core_elements/core_item.dart' as i16;
 import 'package:paper_elements/paper_radio_button.dart' as i17;
 import 'package:paper_elements/paper_checkbox.dart' as i18;
-import 'elements.dart' as i19;
-import 'index.html.0.dart' as i20;
+import 'package:core_elements/core_tooltip.dart' as i19;
+import 'elements.dart' as i20;
+import 'index.html.0.dart' as i21;
 import 'package:smoke/smoke.dart' show Declaration, PROPERTY, METHOD;
 import 'package:smoke/static.dart' show useGeneratedCode, StaticConfiguration;
 import 'elements.dart' as smoke_0;
@@ -45,13 +46,17 @@ void main() {
         #label: (o) => o.label,
         #multi: (o) => o.multi,
         #news: (o) => o.news,
+        #noarrow: (o) => o.noarrow,
         #opened: (o) => o.opened,
         #overlay: (o) => o.overlay,
+        #position: (o) => o.position,
         #selected: (o) => o.selected,
         #selectedClass: (o) => o.selectedClass,
         #selectedItem: (o) => o.selectedItem,
         #selectionSelect: (o) => o.selectionSelect,
+        #show: (o) => o.show,
         #sourceName: (o) => o.sourceName,
+        #sourceUrl: (o) => o.sourceUrl,
         #src: (o) => o.src,
         #toggle: (o) => o.toggle,
         #tokenList: (o) => o.tokenList,
@@ -69,7 +74,7 @@ void main() {
         #selected: (o, v) { o.selected = v; },
         #selectedClass: (o, v) { o.selectedClass = v; },
         #selectedItem: (o, v) { o.selectedItem = v; },
-        #sourceName: (o, v) { o.sourceName = v; },
+        #sourceUrl: (o, v) { o.sourceUrl = v; },
         #src: (o, v) { o.src = v; },
         #valueattr: (o, v) { o.valueattr = v; },
       },
@@ -81,7 +86,8 @@ void main() {
         smoke_0.SourceSelectionElement: {
           #checked: const Declaration(#checked, bool, kind: PROPERTY, annotations: const [smoke_2.reflectable, smoke_1.published]),
           #news: const Declaration(#news, String, kind: PROPERTY, annotations: const [smoke_2.reflectable, smoke_1.published]),
-          #sourceName: const Declaration(#sourceName, String, kind: PROPERTY, annotations: const [smoke_2.reflectable, smoke_2.observable]),
+          #sourceName: const Declaration(#sourceName, String, kind: PROPERTY, isFinal: true, annotations: const [smoke_2.observable]),
+          #sourceUrl: const Declaration(#sourceUrl, String, kind: PROPERTY, isFinal: true, annotations: const [smoke_2.observable]),
         },
       },
       names: {
@@ -96,13 +102,17 @@ void main() {
         #label: r'label',
         #multi: r'multi',
         #news: r'news',
+        #noarrow: r'noarrow',
         #opened: r'opened',
         #overlay: r'overlay',
+        #position: r'position',
         #selected: r'selected',
         #selectedClass: r'selectedClass',
         #selectedItem: r'selectedItem',
         #selectionSelect: r'selectionSelect',
+        #show: r'show',
         #sourceName: r'sourceName',
+        #sourceUrl: r'sourceUrl',
         #src: r'src',
         #toggle: r'toggle',
         #tokenList: r'tokenList',
@@ -128,7 +138,8 @@ void main() {
       i16.upgradeCoreItem,
       i17.upgradePaperRadioButton,
       i18.upgradePaperCheckbox,
-      () => Polymer.register('source-selection', i19.SourceSelectionElement),
+      i19.upgradeCoreTooltip,
+      () => Polymer.register('source-selection', i20.SourceSelectionElement),
     ]);
-  i20.main();
+  i21.main();
 }

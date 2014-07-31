@@ -18,5 +18,15 @@ module.exports={
 		index:"http://www.dailymail.co.uk/articles.rss",
 		namePretty: "Daily Mail (LOL)",
 		logo:""
+	},
+	polygon:{
+		index:"http://www.polygon.com/rss/index.xml",
+		namePretty: "Polygon Games News",
+		logo:""
+	},
+	arsTechnica:{
+		index:"http://arstechnica.com/feed/",
+		namePretty: "Ars Technica",
+		logo:""
 	}
 }

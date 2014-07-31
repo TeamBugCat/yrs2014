@@ -15,7 +15,7 @@ module.exports={
 		logo:""
 	},
 	dailyMail:{
-		index:"http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989",
+		index:"http://www.dailymail.co.uk/articles.rss",
 		namePretty: "Daily Mail (LOL)",
 		logo:""
 	}

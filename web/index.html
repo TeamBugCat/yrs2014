@@ -16,6 +16,10 @@
     <link rel="import" href="elements.html">
 
     <script>
+      /*
+      I know this is basically a sin, but I have to do it because the prerprocessor
+      complains when using links to files that are dynamically generated with node/harp.
+      */
       (function () {
         var element = document.createElement("link");
         element.setAttribute("rel", "stylesheet");

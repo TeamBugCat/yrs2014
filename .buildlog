@@ -1256,3 +1256,11 @@ build.dart finished [3873 ms]
 
 ---
 build.dart --machine --changed=pages/index.html --changed=pages/index1.html --changed=pages/stylesheet1.0.css
+
+build.dart finished [3911 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [3856 ms]
+

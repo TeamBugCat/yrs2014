@@ -2285,3 +2285,21 @@ build.dart finished [4098 ms]
 
 ---
 build.dart --machine --changed=README.md
+
+build.dart finished [3898 ms]
+
+---
+build.dart --machine --changed=README.md --changed=build/web/api_interface.dart --changed=build/web/app.dart --...
+
+build.dart finished [4307 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [3877 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+
+build.dart finished [4149 ms]
+

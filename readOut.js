@@ -59,10 +59,11 @@ function genScript(id){
 exports.genScript = genScript;
 
 function genScript2(id){
-  if (!fs.existsSync("./feeds/"+id+".json~")) {
+  parser(id, function(err,rss){
+  /*if (!fs.existsSync("./feeds/"+id+".json~")) {
     updateCache();
-  }
-  var rss = JSON.parse(fs.readFileSync("./feeds/"+id+".json~",'utf8'));
+  }*/
+  //var rss = JSON.parse(fs.readFileSync("./feeds/"+id+".json~",'utf8'));
   var newRss = [];
   for(var i in rss){
     var item = rss[i];
@@ -73,5 +74,5 @@ function genScript2(id){
   }
   var template = fs.readFileSync('templates/callScript.txt','utf8');
   return mustache.render(template,{rss:newRss});
-}
+}}
 exports.genScript2 = genScript2;

@@ -13,5 +13,11 @@ module.exports={
 		index:"http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989",
 		namePretty: "Al Jazeera",
 		logo:""
+	},
+	dailyMail:{
+		index:"http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989",
+		namePretty: "Daily Mail (LOL)",
+		logo:""
 	}
+}
 }

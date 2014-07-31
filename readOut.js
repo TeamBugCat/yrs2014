@@ -67,7 +67,7 @@ function genScript2(id){
   for(var i in rss){
     var item = rss[i];
     var x = {};
-    x.name = item.name;
+    x.title = item.title;
     x.description = htmlToText.fromString(item.description,{});
     newRss.push(x);
   }

@@ -74,5 +74,5 @@ function genScript2(id){
   }
   var template = fs.readFileSync('templates/callScript.txt','utf8');
   return mustache.render(template,{rss:newRss});
-}}
+})}
 exports.genScript2 = genScript2;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
   {{#rss}}
-    <Say voice="man" finishOnKey="*" language="en-GB">{{title}} - {{description}}</Say>
+    <Say voice="woman" finishOnKey="*" language="en-GB">{{title}} - {{description}}</Say>
     <Pause length="1"/>
   {{/rss}}
 </Response>

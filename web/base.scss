@@ -69,6 +69,8 @@ div.rounded-shadow {
 
 .wrapper {
   margin-top: 0px;
+  padding-right: 2em;
+  padding-left: 1em;
 
   @include outer-container;
   .main {

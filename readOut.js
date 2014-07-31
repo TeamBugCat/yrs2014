@@ -68,7 +68,7 @@ function genScript2(id){
     var item = rss[i];
     var x = {};
     x.name = item.name;
-    x.description = htmlToText(item.description,{});
+    x.description = htmlToText.fromString(item.description,{});
     newRss.push(x);
   }
   var template = fs.readFileSync('templates/callScript.txt','utf8');

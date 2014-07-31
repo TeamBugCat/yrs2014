@@ -1559,3 +1559,38 @@ build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/
 
 build.dart finished [8954 ms]
 
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [4071 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5925 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4360 ms]
+
+---
+build.dart --machine --changed=web/index.html
+
+build.dart finished [4444 ms]
+
+---
+build.dart --machine --changed=web/base.scss
+
+build.dart finished [4258 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5150 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [4091 ms]
+

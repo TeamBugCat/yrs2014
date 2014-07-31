@@ -25,7 +25,7 @@ function parseAndSave(id, feed) {
       if(err){
         console.log("Error: " + err)
       } else {
-        fs.writeFile("./feeds/"+id+".json~", JSON.stringify(rss), function(err) {
+        fs.writeFileSync("./feeds/"+id+".json~", JSON.stringify(rss), function(err) {
             if(err) {
                 console.log(err);
             } else {

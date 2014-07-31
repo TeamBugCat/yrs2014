@@ -1958,3 +1958,28 @@ build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/
 
 build.dart finished [4122 ms]
 
+---
+build.dart --machine --changed=web/johnson.xml --removed=build/web/api_interface.dart --removed=build/web/app.d...
+
+build.dart finished [5289 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [3925 ms]
+
+---
+build.dart --machine --changed=web/johnson.xml
+
+build.dart finished [4036 ms]
+
+---
+build.dart --machine --removed=build/web/api_interface.dart --removed=build/web/app.dart --removed=build/web/ap...
+
+build.dart finished [5415 ms]
+
+---
+build.dart --machine --changed=build/web/api_interface.dart --changed=build/web/app.dart --changed=build/web/ap...
+
+build.dart finished [3929 ms]
+

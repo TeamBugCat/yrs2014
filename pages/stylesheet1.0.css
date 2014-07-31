@@ -1,20 +1,45 @@
-body {
-  padding-left: 11em;
-  font-family: Georgia, "comic sans",
-        Times, serif;
-  color: blue;
-  background-color: #19FFFF }
+
+
 ul.navbar {
   list-style-type: none;
   padding: 1;
   margin: 3;
   position: absolute;
   top: 2em;
-  left: 2em;
-  width: 10em }
+  left: 1em;
+  width: 10em 
+}
+
+ul{
+  font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+
 h1 {
-  font-family: Helvetica, Geneva, Arial,
-        SunSans-Regular, sans-serif }
+  font-family:"Comic Sans MS", cursive, sans-serif;
+  text-align:center;
+  color:#;
+}
+
+h2 {
+   text-align:center;
+   }
+
+p {
+  text-align:center;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+  }
+
+a {
+ text-align:center;
+ font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+
+
+
+
+
 ul.navbar li {
   background: white;
   margin: 0.5em 0;
@@ -22,10 +47,7 @@ ul.navbar li {
   border-right: 1em solid black }
 ul.navbar a {
   text-decoration: wavy }
-a:link {
-  color: orange }
-a:visited {
-  color: blue }
+
 address {
   margin-top: 3em;
   padding-top: 3em;

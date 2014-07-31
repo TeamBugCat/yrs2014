@@ -14,18 +14,21 @@ $mobile: new-breakpoint(max-width 480px);
 $desktop: new-breakpoint(min-width 800px);
 $tablet: new-breakpoint(min-width 480px max-width 800px);
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 body {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
   background-color: #F8F8F8;
   font-family: 'Arial', sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.2em;
   margin: 0px;
+  padding: 0px;
 }
 
 core-menu-button::shadow core-menu::shadow div {

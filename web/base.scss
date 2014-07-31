@@ -15,13 +15,7 @@ $desktop: new-breakpoint(min-width 800px);
 $tablet: new-breakpoint(min-width 480px max-width 800px);
 
 body {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
   background-color: #F8F8F8;
   font-family: 'Arial', sans-serif;
   font-size: 14px;
@@ -69,8 +63,6 @@ div.rounded-shadow {
 
 .wrapper {
   margin-top: 0px;
-  padding-right: 2em;
-  padding-left: 1em;
 
   @include outer-container;
   .main {
@@ -98,7 +90,10 @@ div.rounded-shadow {
     }
 
     @include media($desktop) {
-      @include span-columns(3)
+      @include span-columns(3);
+      :nth-child(4n) {
+        @include omega;
+      }
     }
 
     @include media($tablet) {
@@ -106,6 +101,18 @@ div.rounded-shadow {
       min-height: 1.5cm;
     }
 
+  }
+
+  @include media($tablet) {
+    :nth-child(2n) {
+        @include omega;
+    }
+  }
+
+  @include media($desktop) {
+    :nth-child(4n) {
+        @include omega;
+    }
   }
 }
 

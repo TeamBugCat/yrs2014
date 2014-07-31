@@ -65,7 +65,7 @@ function genScript2(id){
   var rss = JSON.parse(fs.readFileSync("./feeds/"+id+".json~",'utf8'));
   var newRss = [];
   for(var i in rss){
-    var item = rss[item];
+    var item = rss[i];
     var x = {};
     x.name = item.name;
     x.description = htmlToText(item.description,{});

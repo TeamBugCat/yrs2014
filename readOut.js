@@ -48,7 +48,7 @@ function readRss(id, callback){
 exports.readRss = readRss;
 
 function genScript(id){
-  if (!fs.fileExistsSync("./feeds/"+id+".json~")) {
+  if (!fs.existsSync("./feeds/"+id+".json~")) {
     updateCache();
   }
   var rss = JSON.parse(fs.readFileSync("./feeds/"+id+".json~",'utf8'));

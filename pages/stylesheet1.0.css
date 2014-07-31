@@ -10,13 +10,8 @@ ul.navbar {
   width: 10em 
 }
 
-ul{
-  font-family:"Comic Sans MS", cursive, sans-serif;
-}
-
 
 h1 {
-  font-family:"Comic Sans MS", cursive, sans-serif;
   text-align:center;
   color:#;
 }
@@ -27,13 +22,11 @@ h2 {
 
 p {
   text-align:center;
-  font-family:"Comic Sans MS", cursive, sans-serif;
-  }
+    }
 
 a {
  text-align:center;
- font-family:"Comic Sans MS", cursive, sans-serif;
-}
+ }
 
 
 

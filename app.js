@@ -41,7 +41,7 @@ app.all('/api/phonecall',function(req,res,next){
 
 app.all('/api/news/:source',function (req,res,next){
   res.set('Content-Type', 'text/xml');
-  res.send(reader.genScript(req.param("source")));
+  res.send(reader.genScript2(req.param("source")));
 });
 
 app.all('/api/sources', function (req, res, next) {

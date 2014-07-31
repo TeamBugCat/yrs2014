@@ -8,5 +8,10 @@ module.exports={
 		index: "http://www.theguardian.com/uk/rss",
 		namePretty: "The Guardian",
 		logo: ""
+	},
+	alJazeera:{
+		index:"http://www.aljazeera.com/Services/Rss/?PostingId=2007731105943979989",
+		namePretty: "Al Jazeera"
+		logo:""
 	}
 }

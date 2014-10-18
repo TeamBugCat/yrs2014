@@ -8,7 +8,7 @@
     "url": "https://github.com/TeamBugCat/yrs2014.git"
   },
   "dependencies": {
-    "harp": "*",
+    "harp": "v0.11.0",
     "twilio": "*",
     "feedparser": "*",
     "express": "*",

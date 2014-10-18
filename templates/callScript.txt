@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
   {{#rss}}
-    <Say voice="woman" finishOnKey="*" language="en-GB">{{title}} - {{description}}</Say>
+    <play>http://translate.google.com/translate_tts?tl=en-gb&q={{title}}</play>
+    <Say voice="woman" finishOnKey="*" language="en-GB">{{description}}</Say>
     <Pause length="1"/>
   {{/rss}}
 </Response>

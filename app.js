@@ -26,7 +26,7 @@ if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
   var client = twilio(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
 }
 
-app.get('/api/phonecall',function(req,res){
+app.all('/api/phone',function(req,res){
   //Create TwiML response
 	var twiml = new twilio.TwimlResponse();
       twiml.say('Welcome to the disbility assistance service.')
@@ -45,7 +45,7 @@ app.get('/api/phonecall',function(req,res){
     res.send(twiml.toString()); 
 });
 
-app.post('/api/phonecall',function(req,res,next){
+app.all('/api/phonecall',function(req,res,next){
 	//Create TwiML response
 	var twiml = new twilio.TwimlResponse();
     switch(req.param('Digits').toNumber()){

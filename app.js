@@ -26,23 +26,27 @@ if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
   var client = twilio(process.env.TWILIO_SID, process.env.TWILIO_AUTH);
 }
 
-app.all('/api/phonecall',function(req,res,next){
-	//Create TwiML response
+app.get('/api/phonecall',function(req,res){
+  //Create TwiML response
 	var twiml = new twilio.TwimlResponse();
-  if(!req.param('Digits')){
-    twiml.say('Welcome to the disbility assistance service.')
+      twiml.say('Welcome to the disbility assistance service.')
       .pause({ length:1 })
     .gather({
+        action:'/api/phonecall',
         numdigits:'1'
     }, function() {
         this.say('Press 1 for BBC News, 2 for the Guardian, 3 for Al Jazeera, 4 for Daily Mail, 5 for Polygon, 6 for Ars Technica, 9 for Something.', {
           voice:'woman',
           language:'en-gb'
         });
-    });
+      
     res.set('Content-Type', 'text/xml');
-    res.send(twiml.toString());
-  }else{
+    res.send(twiml.toString()); 
+});
+
+app.post('/api/phonecall',function(req,res,next){
+	//Create TwiML response
+	var twiml = new twilio.TwimlResponse();
     switch(req.param('Digits').toNumber()){
       case 1:
         twiml.redirect("/api/news/bbcNews");

@@ -32,10 +32,14 @@ app.all('/api/phonecall',function(req,res,next){
   if(!req.param('Digits')){
     twiml.say('Welcome to the disbility assistance service.')
       .pause({ length:1 })
-      .say('Press 1 for BBC News, 2 for the Guardian, 3 for Al Jazeera, 4 for Daily Mail(LOL), 5 for Polygon, 6 for Ars Technica, 9 for Something.', {
-          voice:'man',
+    .gather({
+        numdigits:'1'
+    }, function() {
+        this.say('Press 1 for BBC News, 2 for the Guardian, 3 for Al Jazeera, 4 for Daily Mail, 5 for Polygon, 6 for Ars Technica, 9 for Something.', {
+          voice:'woman',
           language:'en-gb'
-      });
+        });
+    });
     res.set('Content-Type', 'text/xml');
     res.send(twiml.toString());
   }else{

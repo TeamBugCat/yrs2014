@@ -29,7 +29,7 @@ if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
 app.all('/api/phonecall',function(req,res,next){
 	//Create TwiML response
 	var twiml = new twilio.TwimlResponse();
-  if(req.param('Digits').length.toNumber()==0){
+  if(!req.param('Digits')){
     twiml.say('Welcome to the disbility assistance service.')
       .pause({ length:1 })
       .say('Press 1 for BBC News, 2 for the Guardian, 3 for Al Jazeera, 4 for Daily Mail(LOL), 5 for Polygon, 6 for Ars Technica, 9 for Something.', {

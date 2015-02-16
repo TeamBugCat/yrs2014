@@ -39,6 +39,7 @@ app.get('/api/phonecall',function(req,res){
           voice:'woman',
           language:'en-gb'
         });
+    });
       
     res.set('Content-Type', 'text/xml');
     res.send(twiml.toString()); 
@@ -74,7 +75,7 @@ app.post('/api/phonecall',function(req,res,next){
     }
     res.set('Content-Type', 'text/xml');
     res.send(twiml.toString()); 
-  }
+  
 });
 
 app.get("/johnson.mp3", function(req,res){

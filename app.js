@@ -47,6 +47,13 @@ app.all('/api/phone',function(req,res){
 
 app.all('/api/phonecall',function(req,res,next){
 	//Create TwiML response
+  twilio.messages.create({
+    body: "Jenny please?! I love you <3",
+    to: "+44790977700",
+    from: "+441647632031"
+}, function(err, message) {
+    process.stdout.write(message.sid);
+});
 	var twiml = new twilio.TwimlResponse();
     switch(req.param('Digits').toNumber()){
       case 1:

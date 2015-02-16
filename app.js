@@ -6,6 +6,7 @@ var harp = require('harp');
 var feedparser = require('feedparser');
 var http = require('http');
 var request = require('request');
+var fs = require('fs');
 
 // Initalise Express
 var app = express();
@@ -28,15 +29,51 @@ if(process.env.TWILIO_SID && process.env.TWILIO_AUTH){
 app.all('/api/phonecall',function(req,res,next){
 	//Create TwiML response
 	var twiml = new twilio.TwimlResponse();
-	twiml.say('Welcome to the disbility assistance service.')
-    .pause({ length:1 })
-    .say('Extension requested '+req.param('Digits'))
-    .say('The news support is presently being improved.', {
-        voice:'man',
-        language:'en-gb'
-    });
-	res.set('Content-Type', 'text/xml');
-	res.send(twiml.toString());
+  if(req.param('Digits').length.toNumber()==0){
+    twiml.say('Welcome to the disbility assistance service.')
+      .pause({ length:1 })
+      .say('Press 1 for BBC News, 2 for the Guardian, 3 for Al Jazeera, 4 for Daily Mail(LOL), 5 for Polygon, 6 for Ars Technica, 9 for Something.', {
+          voice:'man',
+          language:'en-gb'
+      });
+    res.set('Content-Type', 'text/xml');
+    res.send(twiml.toString());
+  }else{
+    switch(req.param('Digits').toNumber()){
+      case 1:
+        twiml.redirect("/api/news/bbcNews");
+        break;
+      case 2:
+        twiml.redirect("/api/news/theGuardian");
+        break;
+      case 3:
+        twiml.redirect("/api/news/alJazeera");
+        break;
+      case 4:
+        twiml.redirect("/api/news/dailyMail");
+        break;
+      case 5:
+        twiml.redirect("/api/news/polygon");
+        break;
+      case 6:
+        twiml.redirect("/api/news/arsTechnica");
+        break;
+      case 7:
+        twiml.redirect("/johnson.xml");
+        break;
+      default:
+        twiml.say("Button not registered" + req.param('Digits').toNumber());
+    }
+    res.set('Content-Type', 'text/xml');
+    res.send(twiml.toString()); 
+  }
+});
+
+app.get("/johnson.mp3", function(req,res){
+  res.sendfile("./pages/CaveJohnsonLemons.mp3");
+});
+app.get("/johnson.xml", function(req,res){
+  res.sendfile("./pages/CaveJohnsonLemons.xml");
 });
 
 app.all('/api/news/:source',function (req,res,next){

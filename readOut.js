@@ -105,7 +105,6 @@ function genScriptNoCache(rss) {
     x.description = escapeSqBrackets(htmlToText.fromString(item.description,{}));
     x.descriptionUrl = encodeURI(x.description);
     newRss.push(x);
-    newRss.push(x);
   }
   
   var template = fs.readFileSync('templates/callScript.txt','utf8');

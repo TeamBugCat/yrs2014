@@ -11,7 +11,7 @@
     "harp": "v0.11.0",
     "twilio": "*",
     "feedparser": "*",
-    "express": "*",
+    "express": "3.x.x",
     "request": "*",
     "parse-rss": "*",
     "html-to-text": "*",
